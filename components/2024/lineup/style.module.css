@@ -1,0 +1,7 @@
+/* To solve the image clipping issue when the aspect ratio is not 1
+ * See https: //github.com/yuk1ty/rust-tokyo/pull/254
+ */
+.img img {
+    border-radius: 0%;
+    height: auto;
+}

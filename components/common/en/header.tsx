@@ -1,5 +1,5 @@
 import {
-  PagePath,
+  type PagePath,
   event2019path,
   event2021path,
   event2022path,

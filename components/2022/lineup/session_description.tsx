@@ -1,6 +1,6 @@
-import { SelectedSession } from "@/constants/2022/lineup/context";
-import { SpeakerInfo } from "@/constants/2022/lineup/speaker";
-import { SessionListPageTexts } from "@/constants/2022/lineup/text";
+import type { SelectedSession } from "@/constants/2022/lineup/context";
+import type { SpeakerInfo } from "@/constants/2022/lineup/speaker";
+import type { SessionListPageTexts } from "@/constants/2022/lineup/text";
 import {
   Badge,
   Box,

@@ -1,7 +1,7 @@
 import { theme2022 } from "@/constants/2022/css/theme";
 import { theme2023 } from "@/constants/2023/css/theme";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 
 const rustTokyoOriginal = extendTheme({
@@ -37,7 +37,8 @@ const rustTokyoOriginal = extendTheme({
 });
 
 const App = ({ Component, pageProps, router }: AppProps) => {
-  let theme;
+  // biome-ignore lint/suspicious/noExplicitAny: CSS theme は動的なため any を許容する
+  let theme: Record<string, any>;
   if (
     router.route.startsWith("/2023") ||
     router.route.startsWith("/scta") ||

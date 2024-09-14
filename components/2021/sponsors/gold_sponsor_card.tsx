@@ -1,4 +1,4 @@
-import { GoldSponsor } from "@/types/2021/types";
+import type { GoldSponsor } from "@/types/2021/types";
 import {
   Box,
   Button,

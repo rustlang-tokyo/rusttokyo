@@ -1,4 +1,4 @@
-import { SelectedSession } from "@/constants/2023/lineup/context";
+import type { SelectedSession } from "@/constants/2023/lineup/context";
 import { Icon } from "@chakra-ui/icon";
 import { Box, Link, Text } from "@chakra-ui/layout";
 import { RiSlideshowLine } from "react-icons/ri";

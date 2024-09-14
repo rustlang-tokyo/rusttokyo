@@ -1,5 +1,9 @@
-import { EnTopTextList, JaTopTextList } from "@/constants/2023/top/texts";
-import { BronzeSponsor, GoldSponsor, SilverSponsor } from "@/types/2023/types";
+import type { EnTopTextList, JaTopTextList } from "@/constants/2023/top/texts";
+import type {
+  BronzeSponsor,
+  GoldSponsor,
+  SilverSponsor,
+} from "@/types/2023/types";
 import { Heading, Wrap } from "@chakra-ui/react";
 import { BronzeSponsorCard } from "./bronze_sponsor_card";
 import { GoldSponsorCard } from "./gold_sponsor_card";

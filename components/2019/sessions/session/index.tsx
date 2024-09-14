@@ -94,8 +94,8 @@ export function Session(props: Props) {
             ))}
             <p className="session_modal_detail_language">{props.language}</p>
             <p className="session_modal_detail_abstract">
-              {props.abstract.split("\n").map((s, index) => (
-                <span key={`abstract_row_${index}`}>
+              {props.abstract.split("\n").map((s) => (
+                <span key={`abstract_row_${s}`}>
                   {s}
                   <br />
                 </span>

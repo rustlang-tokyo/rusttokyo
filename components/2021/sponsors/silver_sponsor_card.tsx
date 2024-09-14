@@ -1,4 +1,4 @@
-import { SilverSponsor } from "@/types/2021/types";
+import type { SilverSponsor } from "@/types/2021/types";
 import { Box, Center, Image, Link } from "@chakra-ui/react";
 import { css } from "@emotion/css";
 

@@ -1,4 +1,4 @@
-import { SpeakerInfo } from "./speaker";
+import type { SpeakerInfo } from "./speaker";
 
 export type SelectedSession = SelectedSessionBase & {
   title: string;

@@ -1,5 +1,5 @@
 import {
-  SelectedSession,
+  type SelectedSession,
   endingBase,
   openingBase,
   session1Base,

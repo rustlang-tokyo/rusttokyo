@@ -1,7 +1,7 @@
 import { headlines } from "@/constants/2021/css/css";
-import { SelectedSession } from "@/constants/2021/lineup/context";
-import { SpeakerInfo } from "@/constants/2021/lineup/speaker";
-import { SessionListPageTexts } from "@/constants/2021/lineup/text";
+import type { SelectedSession } from "@/constants/2021/lineup/context";
+import type { SpeakerInfo } from "@/constants/2021/lineup/speaker";
+import type { SessionListPageTexts } from "@/constants/2021/lineup/text";
 import {
   Badge,
   Box,
