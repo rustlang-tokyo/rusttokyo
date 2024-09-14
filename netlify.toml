@@ -1,0 +1,36 @@
+[build]
+  command = "next build"
+
+[[headers]]
+  for = "/service-worker.js"
+  [headers.values]
+    cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+
+[[headers]]
+  for = "/static/site.css"
+  [headers.values]
+    cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+
+[[redirects]]
+  from = "/coc/"
+  to = "https://docs.google.com/document/d/1Bi8NqNOQF6zoUnIAEQIjIW4EC-FXT9NJzy5R6a0b8Y4/edit?usp=sharing"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/coc/en/"
+  to = "https://docs.google.com/document/d/1Bi8NqNOQF6zoUnIAEQIjIW4EC-FXT9NJzy5R6a0b8Y4/edit?usp=sharing"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/lineup/*"
+  to = "/2023/lineup/:splat"
+
+[[redirects]]
+  from = "/sponsors/*"
+  to = "/2023/sponsors/:splat"
+
+[[redirects]]
+  from = "/jobboard/*"
+  to = "/2023/jobboard/:splat"
