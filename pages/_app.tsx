@@ -64,12 +64,12 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         />
         <meta
           property="og:image"
-          content="https://rust.tokyo/static/logo/rust_tokyo_rectangle_ogp.png"
+          content="/static/logo/rust_tokyo_rectangle_ogp.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image"
-          content="https://rust.tokyo/static/logo/rust_tokyo_rectangle_ogp.png"
+          content="/static/logo/rust_tokyo_rectangle_ogp.png"
         />
       </Head>
       <Component {...pageProps} />
