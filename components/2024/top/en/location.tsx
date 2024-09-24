@@ -12,8 +12,8 @@ export function Location(props: { isPc: boolean }) {
           Location
         </Heading>
         <Text fontSize={contentFontSize}>
-          Floor 16 Shibuya FUKURAS, 1 Chome-2-3 Dogenzaka, Shibuya City, Tokyo 150-0043,
-          Japan
+          Floor 16 Shibuya FUKURAS, 1 Chome-2-3 Dogenzaka, Shibuya City, Tokyo
+          150-0043, Japan
         </Text>
         <Text fontSize={contentFontSize}>
           GMO Internet Group’s second main office GMO Yours, Fukuras
