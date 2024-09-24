@@ -12,7 +12,10 @@ export function Location(props: { isPc: boolean }) {
           Location
         </Heading>
         <Text fontSize={contentFontSize}>
-          〒150-0043　東京都渋谷区道玄坂１丁目２−３　渋谷フクラス
+          〒150-0043　東京都渋谷区道玄坂1丁目2番3号 渋谷フクラス 16階
+        </Text>
+        <Text fontSize={contentFontSize}>
+          GMOインターネットグループ　グループ第２本社　GMO Yours・フクラス
         </Text>
         <Text fontSize={contentFontSize}>8F 受付までお越しください。</Text>
         <iframe
