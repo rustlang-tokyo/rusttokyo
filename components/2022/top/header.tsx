@@ -1,5 +1,5 @@
 import {
-  PagePath,
+  type PagePath,
   cocPagePath,
   jobboardPagePath,
   lineupPagePath,

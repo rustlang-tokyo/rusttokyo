@@ -16,7 +16,7 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 import useMedia from "use-media";
 
 export function Subtitle(props: { text: string }) {

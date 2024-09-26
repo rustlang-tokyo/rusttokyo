@@ -1,4 +1,4 @@
-import { GoldSponsor } from "@/types/2022/types";
+import type { GoldSponsor } from "@/types/2022/types";
 import { Box, Center, Heading, Link, Text } from "@chakra-ui/react";
 import { SponsorLogo } from "../common/sponsor_logo";
 

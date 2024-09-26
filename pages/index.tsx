@@ -1,118 +1,59 @@
-import { Eyecatch } from "@/components/common/eyecatch";
-import { Footer } from "@/components/common/footer";
-import { Header } from "@/components/common/header/";
-import { headlines } from "@/constants/common/css/css";
-import { topPagePath } from "@/constants/common/header/navigation";
-import {
-  Box,
-  Center,
-  Heading,
-  Link as ChakraLink,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
-import Head from "next/head";
+import { Meta } from "@/components/2024/common/meta";
+import { Eyecatch } from "@/components/2024/top/eyecatch";
+import { Footer } from "@/components/2024/top/footer";
+import { Header } from "@/components/2024/top/header";
+import { Location } from "@/components/2024/top/location";
+import { Organizers } from "@/components/2024/top/organizers";
+import { topPagePath } from "@/constants/2024/header/navigation";
+import { topI18nTexts } from "@/constants/2024/top/texts";
+import { Box } from "@chakra-ui/react";
 import useMedia from "use-media";
 
 export default function index() {
   const isPc = useMedia("(min-width: 520px)");
+
   return (
-    <Box>
-      <Head>
-        <title>Rust.Tokyo</title>
-        <meta property="og:title" content="Rust.Tokyo" />
-      </Head>
+    <>
+      <Meta />
       <Header isPc={isPc} currentPage={topPagePath} />
-      <Box bg="vampireBlack.100" py={{ base: 12 }}>
-        <Box>
-          <Eyecatch />
-        </Box>
+      <Box
+        textAlign="center"
+        pt="20px"
+        pb="10px"
+        bgColor="vampireBlack.100"
+        minHeight="100%"
+      >
+        <Eyecatch isPc={isPc} textSource={topI18nTexts.ja} />
       </Box>
-      <Box bg="vampireBlack.100">
-        <Center>
-          <Heading
-            className={headlines}
-            as="h2"
-            size="2xl"
-            color="cottonCandy.100"
-            py={{ base: 4 }}
-          >
-            Rust.Tokyoとは?
-          </Heading>
-        </Center>
-        <Center>
-          <Text py={{ base: 4 }} color="white">
-            Rust.Tokyoはプログラミング言語Rustのカンファレンスです。
-          </Text>
-        </Center>
+      {/*<Box bg="vampireBlack.100" py={{ base: 12 }}>*/}
+      {/*  <Container maxW="container.xl">*/}
+      {/*    <Center>*/}
+      {/*      <VStack spacing={4}>*/}
+      {/*        <Heading className={headlines} as="h2" size="2xl">*/}
+      {/*          SPONSORS*/}
+      {/*        </Heading>*/}
+
+      {/*        <SponsorList*/}
+      {/*          goldSponsors={goldSponsors.ja}*/}
+      {/*          silverSponsors={silverSponsors.ja}*/}
+      {/*          bronzeSponsors={bronzeSponsors.ja}*/}
+      {/*          isPc={isPc}*/}
+      {/*          textSource={topI18nTexts.ja}*/}
+      {/*        />*/}
+      {/*      </VStack>*/}
+      {/*    </Center>*/}
+      {/*  </Container>*/}
+      {/*</Box>*/}
+      <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
+        <Location isPc={isPc} />
       </Box>
-      <Box bg="vampireBlack.100" py={{ base: 4 }}>
-        <Center>
-          <Heading
-            className={headlines}
-            as="h2"
-            size="2xl"
-            color="cottonCandy.100"
-            py={{ base: 4 }}
-          >
-            今年の開催
-          </Heading>
-        </Center>
+      <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
+        <Organizers isPc={isPc} />
       </Box>
-      <Box bg="vampireBlack.100" py={{ base: 8 }}>
-        <Center>
-          <VStack>
-            <Box>
-              <ChakraLink href="/2023">
-                <Text fontSize="4xl" py={{ base: 4 }} color="white">
-                  2023
-                </Text>
-              </ChakraLink>
-            </Box>
-          </VStack>
-        </Center>
-      </Box>
-      <Box bg="vampireBlack.100" py={{ base: 4 }}>
-        <Center>
-          <Heading
-            className={headlines}
-            as="h2"
-            size="2xl"
-            color="cottonCandy.100"
-            py={{ base: 4 }}
-          >
-            過去の開催
-          </Heading>
-        </Center>
-      </Box>
-      <Box bg="vampireBlack.100" py={{ base: 8 }}>
-        <Center>
-          <VStack>
-            <Box>
-              <ChakraLink href="/2022">
-                <Text fontSize="4xl" py={{ base: 4 }} color="white">
-                  2022
-                </Text>
-              </ChakraLink>
-            </Box>
-            <Box>
-              <ChakraLink href="/2021">
-                <Text fontSize="4xl" py={{ base: 4 }} color="white">
-                  2021
-                </Text>
-              </ChakraLink>
-            </Box>
-            <Box>
-              <ChakraLink href="/2019">
-                <Text fontSize="4xl" py={{ base: 4 }} color="white">
-                  2019
-                </Text>
-              </ChakraLink>
-            </Box>
-          </VStack>
-        </Center>
-      </Box>
+      {/*<Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>*/}
+      {/*  <Staff isPc={isPc} />*/}
+      {/*</Box>*/}
       <Footer />
-    </Box>
+    </>
   );
 }

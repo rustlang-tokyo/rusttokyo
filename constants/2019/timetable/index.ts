@@ -1,4 +1,4 @@
-import { Props as SessionProps } from "@/components/2019/sessions/session";
+import type { Props as SessionProps } from "@/components/2019/sessions/session";
 
 type timetableRow = {
   startTime: string;

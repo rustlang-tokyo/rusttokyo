@@ -5,7 +5,7 @@ import { headlines } from "@/constants/2022/css/css";
 import { cocPagePath } from "@/constants/2022/header/navigation";
 import { codeOfConduct } from "@/constants/2022/title/pagetitle";
 import { Box, Center, Container, Heading, Link, Text } from "@chakra-ui/react";
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 import useMedia from "use-media";
 
 export function Subtitle(props: { text: string }) {

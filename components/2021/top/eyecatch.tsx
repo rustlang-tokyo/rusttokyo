@@ -1,4 +1,4 @@
-import { EnTopTextList, JaTopTextList } from "@/constants/2021/top/texts";
+import type { EnTopTextList, JaTopTextList } from "@/constants/2021/top/texts";
 import {
   Box,
   Button,

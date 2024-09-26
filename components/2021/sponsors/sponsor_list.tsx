@@ -1,6 +1,6 @@
 import { headlines } from "@/constants/2021/css/css";
-import { EnTopTextList, JaTopTextList } from "@/constants/2021/top/texts";
-import { GoldSponsor, SilverSponsor } from "@/types/2021/types";
+import type { EnTopTextList, JaTopTextList } from "@/constants/2021/top/texts";
+import type { GoldSponsor, SilverSponsor } from "@/types/2021/types";
 import {
   Button,
   Center,
@@ -9,7 +9,7 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { utcToZonedTime } from "date-fns-tz";
+import { toZonedTime } from "date-fns-tz";
 import { BiLinkExternal } from "react-icons/bi";
 import { GoldSponsorCard } from "./gold_sponsor_card";
 import { SilverSponsorCard } from "./silver_sponsor_card";
@@ -28,8 +28,8 @@ export function SponsorList(props: {
   const sponsorDisplayable = () => {
     const date = new Date("2021-08-20T14:59:59.999Z");
     const timeZone = "Asia/Tokyo";
-    const limit = utcToZonedTime(date, timeZone);
-    const now = utcToZonedTime(new Date(), timeZone);
+    const limit = toZonedTime(date, timeZone);
+    const now = toZonedTime(new Date(), timeZone);
 
     return now <= limit;
   };

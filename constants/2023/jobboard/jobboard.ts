@@ -1,4 +1,4 @@
-import { JobBoardSponsor } from "@/types/2023/types";
+import type { JobBoardSponsor } from "@/types/2023/types";
 
 type JobBoardSponsorList = {
   ja: JobBoardSponsor[];

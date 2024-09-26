@@ -1,4 +1,4 @@
-import { EnTopTextList, JaTopTextList } from "@/constants/2023/top/texts";
+import type { EnTopTextList, JaTopTextList } from "@/constants/2023/top/texts";
 import { Box, Center, Container, Img, Text } from "@chakra-ui/react";
 
 export function Eyecatch(props: {

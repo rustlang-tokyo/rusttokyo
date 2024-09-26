@@ -1,4 +1,4 @@
-import { BronzeSponsor } from "@/types/2022/types";
+import type { BronzeSponsor } from "@/types/2022/types";
 import { Box } from "@chakra-ui/react";
 import { SponsorLogo } from "../common/sponsor_logo";
 

@@ -4,13 +4,13 @@ import { Header } from "@/components/2023/top/en/header";
 import { Footer } from "@/components/2023/top/footer";
 import { headlines } from "@/constants/2023/css/css";
 import { descriptionPagePath } from "@/constants/2023/header/navigation";
-import { SelectedSession } from "@/constants/2023/lineup/context";
+import type { SelectedSession } from "@/constants/2023/lineup/context";
 import { selectedSessions } from "@/constants/2023/lineup/en/session_selections";
 import { LineupDatabaseEn } from "@/constants/2023/lineup/session_description";
 import { sessionListPageTextsEn } from "@/constants/2023/lineup/text";
 import { sessionDescprition } from "@/constants/2023/title/pagetitle";
 import { Box, Center, Container, Heading } from "@chakra-ui/react";
-import { GetStaticPaths, GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps } from "next";
 import { useEffect, useState } from "react";
 import useMedia from "use-media";
 

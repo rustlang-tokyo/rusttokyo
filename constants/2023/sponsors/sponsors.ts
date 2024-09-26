@@ -1,4 +1,8 @@
-import { BronzeSponsor, GoldSponsor, SilverSponsor } from "@/types/2023/types";
+import type {
+  BronzeSponsor,
+  GoldSponsor,
+  SilverSponsor,
+} from "@/types/2023/types";
 
 export type GoldSponsorList = {
   ja: GoldSponsor[];
