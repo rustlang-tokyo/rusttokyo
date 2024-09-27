@@ -34,8 +34,8 @@ export function Staff(props: { isPc: boolean }) {
                       : undefined
                   }
                   twitterId={s.twitter ? `@${s.twitter.id}` : undefined}
-                  mastodonUrl={s.mastodon ? s.mastodon.url : undefined}
-                  mastodonId={s.mastodon ? s.mastodon.id : undefined}
+                  // mastodonUrl={s.mastodon ? s.mastodon.url : undefined}
+                  // mastodonId={s.mastodon ? s.mastodon.id : undefined}
                 />
               );
             })}
