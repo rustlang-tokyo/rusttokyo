@@ -1,87 +1,97 @@
 export const staff = [
   {
-    image: "/static/2024/staff/fmy.jpeg",
-    name: "fmy",
+    image: "/static/2024/staff/Yuki_Ishii_Dev.JPG",
+    name: "Yuki Ishii",
     twitter: {
-      id: "fmy4159",
+      id: "Yuki_Ishii_Dev",
     },
   },
   {
-    image: "/static/2024/staff/lukas.jpg",
-    name: " Lukas Reineke",
-    mastodon: {
-      id: "@lukas@famichiki.jp",
-      url: "https://famichiki.jp/@lukas",
-    },
-  },
-  {
-    image: "/static/2024/staff/335g.png",
-    name: "335g",
+    image: "/static/2024/staff/EnginnerJoyca.jpg",
+    name: "Masato",
     twitter: {
-      id: "335g",
+      id: "EnginnerJoyca",
     },
   },
   {
-    image: "/static/2024/staff/MasaHero.png",
-    name: "MasaHero",
+    image: "/static/2024/staff/0xt4d4.png",
+    name: "T4D4",
     twitter: {
-      id: "lunadra2yuffie",
+      id: "0xt4d4",
     },
   },
   {
-    image: "/static/2024/staff/togami2864.jpg",
-    name: "togami2864",
+    image: "/static/2024/staff/clankpan.jpg",
+    name: "ClankPan",
     twitter: {
-      id: "togami2864",
+      id: "clankpan",
     },
   },
   {
-    image: "/static/2024/staff/rabe1028.jpg",
-    name: "rabe1028",
-    twitter: {
-      id: "rabe1028",
-    },
-  },
-  {
-    image: "/static/2024/staff/asuka.png",
+    image: "/static/2024/staff/a_skua.png",
     name: "asuka",
     twitter: {
       id: "a_skua",
     },
   },
   {
-    image: "/static/2024/staff/erena_fujita.jpeg",
-    name: "erena fujita",
+    image: "/static/2024/staff/namnium_01.png",
+    name: "namnium",
     twitter: {
-      id: "erena_fujita",
+      id: "namnium_01",
     },
   },
   {
-    image: "/static/2024/staff/megumish.png",
-    name: "megumish",
+    image: "/static/2024/staff/yuusukesan18.png",
+    name: "Yuusuke",
     twitter: {
-      id: "megumish",
+      id: "yuusukesan18",
     },
   },
   {
-    image: "/static/2024/staff/oyu.jpg",
-    name: "Oyu",
+    image: "/static/2024/staff/s3i7h.jpg",
+    name: "s3i7h / スミス",
+    twitter: {
+      id: "s3i7h",
+    },
+  },
+  {
+    image: "/static/2024/staff/penpen_77777.jpg",
+    name: "naoki",
+    twitter: {
+      id: "penpen_77777",
+    },
+  },
+  {
+    image: "/static/2024/staff/yatoneco.jpg",
+    name: "yatoneco",
+  },
+  {
+    image: "/static/2024/staff/maturinonakano.jpeg",
+    name: "0num4",
+    twitter: {
+      id: "maturinonakano",
+    },
+  },
+  {
+    image: "/static/2024/staff/yusuktan.jpeg",
+    name: "Yusuke Tanaka",
+    twitter: {
+      id: "yusuktan",
+    },
+  },
+  {
+    image: "/static/2024/staff/CYUVi1336.jpeg",
+    name: "CYUVi",
+    twitter: {
+      id: "CYUVi1336",
+    },
+  },
+  {
+    image: "/static/2024/staff/yud0uhu.jpg",
+    name: "0yu(おゆ)",
     twitter: {
       id: "yud0uhu",
-    },
-  },
-  {
-    image: "/static/2024/staff/cybai.jpg",
-    name: "cλbai",
-    twitter: {
-      id: "_cybai",
-    },
-  },
-  {
-    image: "/static/2024/staff/kenichihayashi.jpg",
-    name: "Kenichi Hayashi",
-    twitter: {
-      id: "KenichiHayashi",
     },
   },
 ];

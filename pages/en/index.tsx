@@ -4,6 +4,7 @@ import { Header } from "@/components/2024/top/en/header";
 import { Location } from "@/components/2024/top/en/location";
 import { Eyecatch } from "@/components/2024/top/eyecatch";
 import { Organizers } from "@/components/2024/top/organizers";
+import { Staff } from "@/components/2024/top/staff";
 import { topPagePath } from "@/constants/2024/header/navigation";
 import { topI18nTexts } from "@/constants/2024/top/texts";
 import { Box } from "@chakra-ui/react";
@@ -50,9 +51,9 @@ export default function index() {
       <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
         <Organizers isPc={isPc} />
       </Box>
-      {/*<Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>*/}
-      {/*  <Staff isPc={isPc} />*/}
-      {/*</Box>*/}
+      <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
+        <Staff isPc={isPc} />
+      </Box>
       <Footer />
     </>
   );
