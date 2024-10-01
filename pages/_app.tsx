@@ -60,7 +60,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Rust.Tokyo 2023 is a conference for Rustaceans."
+          content="Rust.Tokyo is a conference for Rustaceans."
         />
         <meta
           property="og:image"
