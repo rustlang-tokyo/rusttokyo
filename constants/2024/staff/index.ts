@@ -94,4 +94,29 @@ export const staff = [
       id: "yud0uhu",
     },
   },
+  {
+    image: "/static/2024/staff/sizumita.jpeg",
+    name: "sizumita",
+    twitter: {
+      id: "sizumita",
+    },
+  },
+  {
+    image: "/static/2024/staff/Curiosi46542428.jpg",
+    name: "Shiro",
+    twitter: {
+      id: "Curiosi46542428",
+    },
+  },
+  {
+    image: "/static/2024/staff/task_jp.jpg",
+    name: "Tasuku Suzuki",
+    twitter: {
+      id: "task_jp",
+    },
+  },
+  {
+    image: "/static/2024/staff/chatblanc.jpg",
+    name: "chatblanc",
+  },
 ];
