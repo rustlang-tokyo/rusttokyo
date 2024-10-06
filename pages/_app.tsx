@@ -1,5 +1,6 @@
 import { theme2022 } from "@/constants/2022/css/theme";
 import { theme2023 } from "@/constants/2023/css/theme";
+import { theme2024 } from "@/constants/2024/css/theme";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -40,11 +41,13 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   // biome-ignore lint/suspicious/noExplicitAny: CSS theme は動的なため any を許容する
   let theme: Record<string, any>;
   if (
-    router.route.startsWith("/2023") ||
-    router.route.startsWith("/scta") ||
     router.route === "/" ||
+    router.route.startsWith("/scta") ||
+    router.route.startsWith("/sponsors") ||
     router.route.startsWith("/en")
   ) {
+    theme = theme2024;
+  } else if (router.route.startsWith("/2023")) {
     theme = theme2023;
   } else if (router.route.startsWith("/2022")) {
     theme = theme2022;
