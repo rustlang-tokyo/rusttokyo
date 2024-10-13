@@ -1,6 +1,7 @@
 import {
   type PagePath,
   cocPagePath,
+  jobboardPagePath,
   sponsorPagePath,
   topPagePath,
 } from "@/constants/2024/header/navigation";
@@ -57,14 +58,14 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                   >
                     SPONSORS
                   </Link>
-                  {/*<Link*/}
-                  {/*  p={2}*/}
-                  {/*  href={jobboardPagePath.ja}*/}
-                  {/*  fontSize={"sm"}*/}
-                  {/*  fontWeight={700}*/}
-                  {/*>*/}
-                  {/*  JOBBOARD*/}
-                  {/*</Link>*/}
+                  <Link
+                    p={2}
+                    href={jobboardPagePath.ja}
+                    fontSize={"sm"}
+                    fontWeight={700}
+                  >
+                    JOBBOARD
+                  </Link>
                   <Link
                     pl={2}
                     pr={4}
