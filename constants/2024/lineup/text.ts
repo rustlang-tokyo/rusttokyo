@@ -4,6 +4,7 @@ export type SessionListPageTexts = {
   captionLanguage: string;
   speakerProfile: string;
   snsSharing: string;
+  track: string;
 };
 
 export const sessionListPageTextsJa: SessionListPageTexts = {
@@ -12,6 +13,7 @@ export const sessionListPageTextsJa: SessionListPageTexts = {
   captionLanguage: "字幕言語",
   speakerProfile: "プロフィール",
   snsSharing: "シェアしましょう！",
+  track: "トラック",
 };
 
 export const sessionListPageTextsEn: SessionListPageTexts = {
@@ -20,4 +22,5 @@ export const sessionListPageTextsEn: SessionListPageTexts = {
   captionLanguage: "Caption Language",
   speakerProfile: "Bio",
   snsSharing: "Share it on",
+  track: "Track",
 };

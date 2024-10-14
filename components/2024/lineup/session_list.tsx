@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { FaAngleRight, FaClock } from "react-icons/fa";
 import { HiOutlinePresentationChartBar } from "react-icons/hi";
+import { MdPlace } from "react-icons/md";
 import { PresentationMaterials } from "./materials";
 import styles from "./style.module.css";
 
@@ -62,6 +63,12 @@ function SessionCard(props: {
             {props.session.startFrom}-{props.session.endAt} (JST)
           </Text>
         </HStack>
+        <HStack pt={2}>
+          <Icon as={MdPlace} color={"white"} size="md" />
+          <Text fontSize="sm">
+            {props.textSource.track} {props.session.track}
+          </Text>
+        </HStack>
       </Box>
 
       <Box pb={6}>
@@ -86,6 +93,14 @@ function SessionCard(props: {
       <PresentationMaterials session={props.session} />
 
       <Stack direction="row">
+        <Badge variant="solid" colorScheme="green">
+          <HStack>
+            <Icon as={MdPlace} color={"white"} size="md" />
+            <Text cursor="help">
+              {props.textSource.track} {props.session.track}
+            </Text>
+          </HStack>
+        </Badge>
         {props.session.sessionLanguage && (
           // TODO(tkat0): color scheme
           <Badge variant="solid" colorScheme="purple">

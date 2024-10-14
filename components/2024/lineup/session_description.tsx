@@ -20,6 +20,7 @@ import {
 import dynamic from "next/dynamic";
 import { FaClock, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdPlace } from "react-icons/md";
 import { TwitterShareButton } from "react-share";
 import { PresentationMaterials } from "./materials";
 
@@ -59,6 +60,16 @@ export function SessionDescription(props: {
           </WrapItem>
           <WrapItem>
             <Wrap>
+              <WrapItem>
+                <Badge variant="solid" colorScheme="green">
+                  <HStack>
+                    <Icon as={MdPlace} color={"white"} size="md" />
+                    <Text>
+                      {props.textSource.track} {props.session.track}
+                    </Text>
+                  </HStack>
+                </Badge>
+              </WrapItem>
               <WrapItem>
                 <Badge variant="solid" colorScheme="purple">
                   {props.textSource.sessionLanguage}:{" "}
