@@ -5,6 +5,8 @@ import {
   Avatar,
   Badge,
   Box,
+  Grid,
+  GridItem,
   HStack,
   Heading,
   Icon,
@@ -25,81 +27,80 @@ function SessionCard(props: {
   session: SelectedSession;
 }) {
   return (
-    <>
-      <Box borderWidth={1} p={8} mb={8}>
-        <Box pb={2}>
-          <Wrap>
-            {props.session.speaker.map((speaker: SpeakerInfo) => (
-              <WrapItem key={speaker.name}>
-                <HStack>
-                  <Avatar
-                    // NOTE: workaround when image aspect ratio is not 1.
-                    className={speaker?.padding ? styles.img : undefined}
-                    name={speaker.name}
-                    src={speaker.avatarSrc}
-                    size="sm"
-                    bg="white"
-                    padding={speaker.padding || 0}
-                  />
-                  <Text fontSize="sm">{speaker.name}</Text>
-                </HStack>
-              </WrapItem>
-            ))}
-          </Wrap>
-        </Box>
-        <Box pb={4}>
-          <Heading size="md">
-            {props.session.pagePath ? (
-              <Link href={props.session.pagePath}>{props.session.title}</Link>
-            ) : (
-              <span>{props.session.title}</span>
-            )}
-          </Heading>
-          <HStack pt={2}>
-            <Icon as={FaClock} color={"white"} />
-            <Text fontSize="sm">
-              {props.session.startFrom}-{props.session.endAt} (JST)
-            </Text>
-          </HStack>
-        </Box>
-
-        <Box pb={6}>
-          {props.session.elevatorPitch.split("\n").map((s, i) => (
-            <Text pb={2} key={`${props.session.title}-${i}`}>
-              {s}
-            </Text>
-          ))}
-          <HStack spacing={1}>
-            {props.session.pagePath && (
-              <>
-                <Icon as={FaAngleRight} color={"cottonCandy.100"} />
-                <Link href={props.session.pagePath} color={"cottonCandy.100"}>
-                  {props.textSource.seeMoreDetail}
-                </Link>
-              </>
-            )}
-          </HStack>
-        </Box>
-
-        {/* presentation, video links */}
-        <PresentationMaterials session={props.session} />
-
-        <Stack direction="row">
-          {props.session.sessionLanguage && (
-            // TODO(tkat0): color scheme
-            <Badge variant="solid" colorScheme="purple">
+    <GridItem area={props.session.area} borderWidth={1} p={8}>
+      <Box pb={2}>
+        <Wrap>
+          {props.session.speaker.map((speaker: SpeakerInfo) => (
+            <WrapItem key={speaker.name}>
               <HStack>
-                <Icon as={HiOutlinePresentationChartBar} />
-                <Text cursor="help">
-                  <Tooltip label={props.textSource.sessionLanguage}>
-                    {props.session.sessionLanguage}
-                  </Tooltip>
-                </Text>
+                <Avatar
+                  // NOTE: workaround when image aspect ratio is not 1.
+                  className={speaker?.padding ? styles.img : undefined}
+                  name={speaker.name}
+                  src={speaker.avatarSrc}
+                  size="sm"
+                  bg="white"
+                  padding={speaker.padding || 0}
+                />
+                <Text fontSize="sm">{speaker.name}</Text>
               </HStack>
-            </Badge>
+            </WrapItem>
+          ))}
+        </Wrap>
+      </Box>
+      <Box pb={4}>
+        <Heading size="md">
+          {props.session.pagePath ? (
+            <Link href={props.session.pagePath}>{props.session.title}</Link>
+          ) : (
+            <span>{props.session.title}</span>
           )}
-          {/* TODO(tkat0): enable this after caption is available */}
-          {/* {props.session.captionLanguage && (
+        </Heading>
+        <HStack pt={2}>
+          <Icon as={FaClock} color={"white"} />
+          <Text fontSize="sm">
+            {props.session.startFrom}-{props.session.endAt} (JST)
+          </Text>
+        </HStack>
+      </Box>
+
+      <Box pb={6}>
+        {props.session.elevatorPitch.split("\n").map((s, i) => (
+          <Text pb={2} key={`${props.session.title}-${i}`}>
+            {s}
+          </Text>
+        ))}
+        <HStack spacing={1}>
+          {props.session.pagePath && (
+            <>
+              <Icon as={FaAngleRight} color={"cottonCandy.100"} />
+              <Link href={props.session.pagePath} color={"cottonCandy.100"}>
+                {props.textSource.seeMoreDetail}
+              </Link>
+            </>
+          )}
+        </HStack>
+      </Box>
+
+      {/* presentation, video links */}
+      <PresentationMaterials session={props.session} />
+
+      <Stack direction="row">
+        {props.session.sessionLanguage && (
+          // TODO(tkat0): color scheme
+          <Badge variant="solid" colorScheme="purple">
+            <HStack>
+              <Icon as={HiOutlinePresentationChartBar} />
+              <Text cursor="help">
+                <Tooltip label={props.textSource.sessionLanguage}>
+                  {props.session.sessionLanguage}
+                </Tooltip>
+              </Text>
+            </HStack>
+          </Badge>
+        )}
+        {/* TODO(tkat0): enable this after caption is available */}
+        {/* {props.session.captionLanguage && (
             <Badge variant="solid" colorScheme="purple">
               <HStack>
                 <Icon as={BiCaptions} />
@@ -111,21 +112,25 @@ function SessionCard(props: {
               </HStack>
             </Badge>
           )} */}
-          <Badge variant="solid" colorScheme="yellow">
-            <Text cursor="help">{props.session.sessionType}</Text>
-          </Badge>
-        </Stack>
-      </Box>
-    </>
+        <Badge variant="solid" colorScheme="yellow">
+          <Text cursor="help">{props.session.sessionType}</Text>
+        </Badge>
+      </Stack>
+    </GridItem>
   );
 }
 
 export function SessionList(props: {
+  isPc: boolean;
   textSource: SessionListPageTexts;
   sessions: SelectedSession[];
 }) {
-  return (
-    <>
+  return props.isPc ? (
+    <Grid
+      gridTemplateColumns="[A] 1fr [B] 1fr"
+      gridTemplateRows="[1] auto [2] auto [3] auto [4] auto [5] auto [6] auto [7] auto [8] auto [9] auto [10] auto"
+      gap={8}
+    >
       {props.sessions
         .sort((a, b) => a.order - b.order)
         .map((session: SelectedSession) => (
@@ -134,6 +139,16 @@ export function SessionList(props: {
             textSource={props.textSource}
             session={session}
           />
+        ))}
+    </Grid>
+  ) : (
+    <>
+      {props.sessions
+        .sort((a, b) => a.order - b.order)
+        .map((session: SelectedSession) => (
+          <Box key={session.id} mb={8}>
+            <SessionCard textSource={props.textSource} session={session} />
+          </Box>
         ))}
     </>
   );

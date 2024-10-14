@@ -31,6 +31,7 @@ export default function index() {
           <VStack>
             <Box maxW="container.lg">
               <SessionList
+                isPc={isPc}
                 textSource={sessionListPageTextsEn}
                 sessions={selectedSessions}
               />

@@ -2,6 +2,7 @@ import type { SpeakerInfo } from "./speaker";
 
 export type SelectedSession = SelectedSessionBase & {
   title: string;
+  area: string;
   elevatorPitch: string;
   speaker: SpeakerInfo[];
   description: string;
