@@ -8,6 +8,7 @@ import {
   bronzeSponsors,
   goldSponsors,
   silverSponsors,
+  venueSponsors,
 } from "@/constants/2024/sponsors/sponsors";
 import { sponsors } from "@/constants/2024/title/pagetitle";
 import { topI18nTexts } from "@/constants/2024/top/texts";
@@ -39,6 +40,7 @@ export default function index() {
                 goldSponsors={goldSponsors.en}
                 silverSponsors={silverSponsors.en}
                 bronzeSponsors={bronzeSponsors.en}
+                venueSponsors={venueSponsors.en}
                 isPc={isPc}
                 textSource={topI18nTexts.en}
               />

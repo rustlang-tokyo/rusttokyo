@@ -2,6 +2,7 @@ import type {
   BronzeSponsor,
   GoldSponsor,
   SilverSponsor,
+  VenueSponsor,
 } from "@/types/2024/types";
 
 export type GoldSponsorList = {
@@ -100,3 +101,21 @@ export const bronzeSponsors: BronzeSponsorList = {
 };
 
 bronzeSponsors.en = bronzeSponsors.ja;
+
+export type VenueSponsorList = {
+  ja: VenueSponsor[];
+  en: VenueSponsor[];
+};
+
+export const venueSponsors: VenueSponsorList = {
+  ja: [
+    {
+      name: "TODO10",
+      logoImagePath: "/static/2024/staff/a_skua.png",
+      url: "https://rust.tokyo/",
+    },
+  ],
+  en: [], // Copied from ja later
+};
+
+venueSponsors.en = venueSponsors.ja;

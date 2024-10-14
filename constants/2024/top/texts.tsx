@@ -11,6 +11,7 @@ type TopTextList = {
   bronzeSponsor: string;
   silverSponsor: string;
   goldSponsor: string;
+  venueSponsor: string;
   submitProposal: string;
 };
 
@@ -30,6 +31,7 @@ export const topI18nTexts: Record<"ja" | "en", TopTextList> = {
     bronzeSponsor: "ブロンズスポンサー",
     silverSponsor: "シルバースポンサー",
     goldSponsor: "ゴールドスポンサー",
+    venueSponsor: "会場スポンサー",
     submitProposal: "プロポーザルを応募する",
   },
   en: {
@@ -42,6 +44,7 @@ export const topI18nTexts: Record<"ja" | "en", TopTextList> = {
     bronzeSponsor: "Bronze Sponsor",
     silverSponsor: "Silver Sponsor",
     goldSponsor: "Gold Sponsor",
+    venueSponsor: "Venue Sponsor",
     submitProposal: "Submit proposals",
   },
 };
