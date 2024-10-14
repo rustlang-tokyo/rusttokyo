@@ -45,6 +45,7 @@ const App = ({ Component, pageProps, router }: AppProps) => {
     router.route.startsWith("/scta") ||
     router.route.startsWith("/sponsors") ||
     router.route.startsWith("/jobboard") ||
+    router.route.startsWith("/lineup") ||
     router.route.startsWith("/en")
   ) {
     theme = theme2024;
