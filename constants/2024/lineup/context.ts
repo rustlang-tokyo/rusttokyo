@@ -23,10 +23,6 @@ export type SelectedSessionBase = {
     title: string;
     url: string;
   };
-  youtube?: {
-    url: string;
-  };
-  youtubeUrl?: string;
 };
 
 export const openingBase: SelectedSessionBase = {
@@ -61,10 +57,6 @@ export const session1Base: SelectedSessionBase = {
   order: 2,
   sessionType: "Long Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/nP88P5h41_8?si=ENPTbwwwassBCssG",
-  },
-  youtubeUrl: "https://youtu.be/nP88P5h41_8?si=ENPTbwwwassBCssG",
 };
 
 export const session2Base: SelectedSessionBase = {
@@ -77,10 +69,6 @@ export const session2Base: SelectedSessionBase = {
   order: 3,
   sessionType: "Long Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/V0ZLCxC-9GE?si=8RvLVQPWKwh3-vOZ",
-  },
-  youtubeUrl: "https://youtu.be/V0ZLCxC-9GE?si=8RvLVQPWKwh3-vOZ",
 };
 
 export const session3Base: SelectedSessionBase = {
@@ -93,10 +81,6 @@ export const session3Base: SelectedSessionBase = {
   order: 4,
   sessionType: "Short Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/WewpLDcBXV0?si=2u97UHavXB7awU9p",
-  },
-  youtubeUrl: "https://youtu.be/WewpLDcBXV0?si=2u97UHavXB7awU9p",
 };
 
 export const session4Base: SelectedSessionBase = {
@@ -109,10 +93,6 @@ export const session4Base: SelectedSessionBase = {
   order: 7,
   sessionType: "Short Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/W14V4dnk678?si=6Ead7GF2PB4x1YYE",
-  },
-  youtubeUrl: "https://youtu.be/W14V4dnk678?si=6Ead7GF2PB4x1YYE",
 };
 
 export const session5Base: SelectedSessionBase = {
@@ -124,10 +104,6 @@ export const session5Base: SelectedSessionBase = {
   order: 8,
   sessionType: "Long Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/Wlyt6bEajoo?si=949j0gJsLPLVI0Vp",
-  },
-  youtubeUrl: "https://youtu.be/Wlyt6bEajoo?si=949j0gJsLPLVI0Vp",
 };
 
 export const session6Base: SelectedSessionBase = {
@@ -140,10 +116,6 @@ export const session6Base: SelectedSessionBase = {
   order: 9,
   sessionType: "Long Talk",
   renderDesc: true,
-  youtube: {
-    url: "https://youtu.be/XrHabBxxb98?si=m7kU3UmelOpdWPMG",
-  },
-  youtubeUrl: "https://youtu.be/XrHabBxxb98?si=m7kU3UmelOpdWPMG",
 };
 
 export const sponsor1Base: SelectedSessionBase = {
