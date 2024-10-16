@@ -142,10 +142,16 @@ export function SessionList(props: {
 }) {
   return props.isPc ? (
     <Grid
-      gridTemplateColumns="[A] 1fr [B] 1fr"
-      gridTemplateRows="[1] auto [2] auto [3] auto [4] auto [5] auto [6] auto [7] auto [8] auto [9] auto [10] auto"
+      gridTemplateColumns="[A] 1fr [B] 1fr [C]"
+      gridTemplateRows="[header] auto [opening] auto [no-1] auto [no-2] auto [no-3] auto [no-4] auto [no-5] auto [no-6] auto [no-7] auto [no-8] auto [no-9] auto [no-10] auto [closing] auto"
       gap={8}
     >
+      <GridItem area="header / A">
+        <Heading size="md">{props.textSource.track} A</Heading>
+      </GridItem>
+      <GridItem area="header / B">
+        <Heading size="md">{props.textSource.track} B</Heading>
+      </GridItem>
       {props.sessions
         .sort((a, b) => a.order - b.order)
         .map((session: SelectedSession) => (

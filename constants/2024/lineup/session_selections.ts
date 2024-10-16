@@ -25,7 +25,7 @@ import {
 
 export const selectedSessions: SelectedSession[] = [
   {
-    area: "2 / A",
+    area: "no-1 / A",
     title: "TODO1",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -36,7 +36,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session1Base,
   },
   {
-    area: "2 / B",
+    area: "no-1 / B",
     title: "TODO2",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -47,7 +47,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session2Base,
   },
   {
-    area: "3 / A",
+    area: "no-2 / A",
     title: "TODO3",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -58,7 +58,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session3Base,
   },
   {
-    area: "3 / B",
+    area: "no-2 / B",
     title: "TODO4",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -69,7 +69,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session4Base,
   },
   {
-    area: "4 / A",
+    area: "no-3 / A",
     title: "TODO5",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -80,7 +80,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session5Base,
   },
   {
-    area: "4 / B",
+    area: "no-3 / B",
     title: "TODO6",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -91,7 +91,7 @@ export const selectedSessions: SelectedSession[] = [
     ...session6Base,
   },
   {
-    area: "5 / A",
+    area: "no-4 / A",
     title: "TODO7",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -101,7 +101,7 @@ export const selectedSessions: SelectedSession[] = [
     ...sponsor1Base,
   },
   {
-    area: "5 / B",
+    area: "no-4 / B",
     title: "TODO8",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -111,7 +111,7 @@ export const selectedSessions: SelectedSession[] = [
     ...sponsor2Base,
   },
   {
-    area: "1 / A",
+    area: "opening / A / opening / C",
     title: "TODO9",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -121,7 +121,7 @@ export const selectedSessions: SelectedSession[] = [
     ...openingBase,
   },
   {
-    area: "6 / A",
+    area: "closing / A / closing / C",
     title: "TODO10",
     elevatorPitch:
       "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
