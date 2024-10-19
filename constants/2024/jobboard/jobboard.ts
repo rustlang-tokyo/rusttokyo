@@ -9,7 +9,7 @@ export const sponsors: JobBoardSponsorList = {
   ja: [
     {
       name: "TODO1",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -17,7 +17,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO2",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -25,7 +25,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO3",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -33,7 +33,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO4",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -42,7 +42,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO5",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -50,7 +50,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO6",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
@@ -58,7 +58,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "TODO7",
-      imgSrc: "/static/2024/staff/a_skua.png",
+      imgSrc: "",
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",

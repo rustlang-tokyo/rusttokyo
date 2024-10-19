@@ -18,7 +18,7 @@ export const goldSponsors: GoldSponsorList = {
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
     {
@@ -27,7 +27,7 @@ export const goldSponsors: GoldSponsorList = {
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
     {
@@ -36,7 +36,7 @@ export const goldSponsors: GoldSponsorList = {
       description:
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
         "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
   ],
@@ -54,23 +54,23 @@ export const silverSponsors: SilverSponsorList = {
   ja: [
     {
       name: "TODO4",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
       inverse: true,
     },
     {
       name: "TODO5",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
     {
       name: "TODO6",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
     {
       name: "TODO7",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
   ],
@@ -88,12 +88,12 @@ export const bronzeSponsors: BronzeSponsorList = {
   ja: [
     {
       name: "TODO8",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
     {
       name: "TODO9",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
   ],
@@ -111,7 +111,7 @@ export const venueSponsors: VenueSponsorList = {
   ja: [
     {
       name: "TODO10",
-      logoImagePath: "/static/2024/staff/a_skua.png",
+      logoImagePath: "",
       url: "https://rust.tokyo/",
     },
   ],
