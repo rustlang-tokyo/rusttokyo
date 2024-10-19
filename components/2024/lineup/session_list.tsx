@@ -63,12 +63,14 @@ function SessionCard(props: {
             {props.session.startFrom}-{props.session.endAt} (JST)
           </Text>
         </HStack>
-        <HStack pt={2}>
-          <Icon as={MdPlace} color={"white"} size="md" />
-          <Text fontSize="sm">
-            {props.textSource.track} {props.session.track}
-          </Text>
-        </HStack>
+        {props.session.track && (
+          <HStack pt={2}>
+            <Icon as={MdPlace} color={"white"} />
+            <Text fontSize="sm">
+              {props.textSource.track} {props.session.track}
+            </Text>
+          </HStack>
+        )}
       </Box>
 
       <Box pb={6}>
@@ -93,14 +95,6 @@ function SessionCard(props: {
       <PresentationMaterials session={props.session} />
 
       <Stack direction="row">
-        <Badge variant="solid" colorScheme="green">
-          <HStack>
-            <Icon as={MdPlace} color={"white"} size="md" />
-            <Text cursor="help">
-              {props.textSource.track} {props.session.track}
-            </Text>
-          </HStack>
-        </Badge>
         {props.session.sessionLanguage && (
           // TODO(tkat0): color scheme
           <Badge variant="solid" colorScheme="purple">
@@ -152,15 +146,13 @@ export function SessionList(props: {
       <GridItem area="header / B">
         <Heading size="md">{props.textSource.track} B</Heading>
       </GridItem>
-      {props.sessions
-        .sort((a, b) => a.order - b.order)
-        .map((session: SelectedSession) => (
-          <SessionCard
-            key={session.id}
-            textSource={props.textSource}
-            session={session}
-          />
-        ))}
+      {props.sessions.map((session: SelectedSession) => (
+        <SessionCard
+          key={session.id}
+          textSource={props.textSource}
+          session={session}
+        />
+      ))}
     </Grid>
   ) : (
     <>

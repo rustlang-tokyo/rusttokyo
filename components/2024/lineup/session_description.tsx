@@ -20,6 +20,7 @@ import {
 import { FaClock, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
+import { SiQiita } from "react-icons/si";
 import { TwitterShareButton } from "react-share";
 import { PresentationMaterials } from "./materials";
 
@@ -58,7 +59,7 @@ export function SessionDescription(props: {
               <WrapItem>
                 <Badge variant="solid" colorScheme="green">
                   <HStack>
-                    <Icon as={MdPlace} color={"white"} size="md" />
+                    <Icon as={MdPlace} color={"white"} />
                     <Text>
                       {props.textSource.track} {props.session.track}
                     </Text>
@@ -139,7 +140,7 @@ export function SessionDescription(props: {
                               fontSize="sm"
                               isExternal
                             >
-                              <Icon as={FaXTwitter} /> {speaker.twitterAccount}
+                              <Icon as={FaXTwitter} /> @{speaker.twitterAccount}
                             </Link>
                           )}
                         </WrapItem>
@@ -151,6 +152,17 @@ export function SessionDescription(props: {
                               isExternal
                             >
                               <Icon as={FaGithub} /> {speaker.githubAccount}
+                            </Link>
+                          )}
+                        </WrapItem>
+                        <WrapItem>
+                          {speaker.qiitaAccount && (
+                            <Link
+                              href={`https://qiita.com/${speaker.qiitaAccount}`}
+                              fontSize="sm"
+                              isExternal
+                            >
+                              <Icon as={SiQiita} /> @{speaker.qiitaAccount}
                             </Link>
                           )}
                         </WrapItem>
