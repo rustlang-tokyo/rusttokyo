@@ -7,6 +7,7 @@ import {
   session2B,
   session5A,
   session5B,
+  session6A,
   session6B,
   session7A,
   session7B,
@@ -480,6 +481,63 @@ const Session5B = () => {
 
 const Session5B_en = Session5B;
 
+const Session6A = () => {
+  return (
+    <>
+      <Text pb={4}>
+        PaidyというAmazonやAppleなどで使われている後払いサービスで、Rustを使ったカード決済システムの開発に携わっていました。
+      </Text>
+
+      <Text pb={4}>
+        絶対落ちてはならないサービスだからこそ、多くの結合テストが書かれてきましたが、いよいよローカルでの実行時間が長くなり、開発体験が悪くなっていました。
+      </Text>
+
+      <Text pb={4}>
+        そこで、これまでシングルスレッドで実行していたテストを並行処理に対応させることで、テスト自体に手を加えなくても実行時間を大きく短縮できるのではと考えました。
+      </Text>
+
+      <Text pb={4}>
+        Rustならではの落とし穴や工夫などを紹介する、実用的な内容となっております。
+        具体的に、Wiremockなどのライブラリの実装やDropを使ったリソースの後処理、Tokioで共通のランタイムを使った方法を比較していきます。
+      </Text>
+    </>
+  );
+};
+
+const Session6A_en = () => {
+  return (
+    <>
+      <Text pb={4}>
+        I worked on critical path backend services that processed credit card
+        transactions at Paidy, a BNPL service used by companies like Apple and
+        Amazon.
+      </Text>
+
+      <Text pb={4}>
+        Due to the importance of reliability of the service, downtime wasn’t an
+        option. As such, we wrote a large number of integration tests. However,
+        as the test suite grew, running them locally took increasingly longer,
+        which began to hurt the developer experience.
+      </Text>
+
+      <Text pb={4}>
+        To solve this problem, I looked into migrating out tests to run on
+        multiple threads, since they had been running single-threaded. By
+        enabling parallel execution without modifying the tests themselves, we
+        were able to significantly reduce the runtime, resulting in a much
+        faster testing process.
+      </Text>
+
+      <Text pb={4}>
+        In this talk, I’ll share the practical insights, and pitfalls of
+        multithreaded testing in Rust. I’ll be covering how libraries like
+        Wiremock are implemented, managing resource cleanup with Drop, and other
+        methods using code examples.
+      </Text>
+    </>
+  );
+};
+
 const Session6B = () => {
   return (
     <>
@@ -888,6 +946,11 @@ const lineupDatabase = [
     id: session5B.id,
     ja: Session5B,
     en: Session5B_en,
+  },
+  {
+    id: session6A.id,
+    ja: Session6A,
+    en: Session6A_en,
   },
   {
     id: session6B.id,

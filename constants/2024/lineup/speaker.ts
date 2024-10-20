@@ -87,6 +87,24 @@ Rubyで書けるゲームエンジンやワンバイナリツールを作った�
   avatarSrc: `${avatarBaseSrc}ahogappa.PNG`,
 };
 
+export const Haruki_Shimada: SpeakerInfo = {
+  name: "Haruki Shimada",
+  profile:
+    "スタートアップでエンジニアをしています。PaidyでRustを使ったクレジットカードの開発もしていました。",
+  githubAccount: "peaske7",
+  twitterAccount: "HarukiJay",
+  avatarSrc: `${avatarBaseSrc}peaske7.webp`,
+};
+
+export const Haruki_Shimada_en: SpeakerInfo = {
+  name: "peaske7",
+  profile:
+    "Software engineer at a startup. I worked on credit card backends with Rust at Paidy.",
+  githubAccount: "peaske7",
+  twitterAccount: "HarukiJay",
+  avatarSrc: `${avatarBaseSrc}peaske7.webp`,
+};
+
 export const ahogappa_en: SpeakerInfo = {
   name: "ahogappa",
   profile: `I am a web application developer at STORES, Inc.

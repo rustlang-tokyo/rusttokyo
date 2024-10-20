@@ -12,6 +12,7 @@ import {
   session4B,
   session5A,
   session5B,
+  session6A,
   session6B,
   session7A,
   session7B,
@@ -24,6 +25,7 @@ import {
 } from "./context";
 import {
   David_Lu,
+  Haruki_Shimada,
   Motoyuki_Kimura,
   Satoru_Nishio,
   Satoshi_Yoshikawa,
@@ -144,13 +146,15 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
     pagePath: `/lineup/${session5B.id}`,
     ...session5B,
   },
-  // {
-  //   title: "未定",
-  //   sessionLanguage: "日本語",
-  //   elevatorPitch: "",
-  //   speaker: [],
-  //   ...session6A,
-  // },
+  {
+    title: "カードバックエンドの結合テストを並列処理に移行した話",
+    sessionLanguage: "日本語",
+    elevatorPitch: `結合テストをマルチスレッドで実行することで、テスト時間を大幅に削減できます。
+テスト実行を並列処理に移行する際の方法や気をつけるべき点などを、実際のカードシステムのバックエンドで移行したときの学びをもとに紹介します。`,
+    speaker: [Haruki_Shimada],
+    pagePath: `/lineup/${session6A.id}`,
+    ...session6A,
+  },
   {
     title: "smithay で作って動かす Wayland compositor",
     sessionLanguage: "日本語",

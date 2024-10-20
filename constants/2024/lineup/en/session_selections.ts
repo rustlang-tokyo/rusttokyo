@@ -12,6 +12,7 @@ import {
   session4B,
   session5A,
   session5B,
+  session6A,
   session6B,
   session7A,
   session7B,
@@ -24,6 +25,7 @@ import {
 } from "../context";
 import {
   David_Lu_en,
+  Haruki_Shimada_en,
   Motoyuki_Kimura_en,
   Satoru_Nishio_en,
   Satoshi_Yoshikawa_en,
@@ -148,13 +150,15 @@ In this session, I will discuss the existing tools, along with the technical det
     pagePath: `/lineup/en/${session5B.id}`,
     ...session5B,
   },
-  // {
-  //   title: "未定",
-  //   sessionLanguage: "日本語",
-  //   elevatorPitch: "",
-  //   speaker: [],
-  //   ...session6A,
-  // },
+  {
+    title: "Multithreaded testing: the good, the bad, and the ugly",
+    sessionLanguage: "日本語",
+    elevatorPitch:
+      "By running integration tests using multiple threads, we can significantly reduce test execution time. In this talk, I will share the different methods and pitfalls learned from transitioning our integration tests from single to multithreaded execution.",
+    speaker: [Haruki_Shimada_en],
+    pagePath: `/lineup/en/${session6A.id}`,
+    ...session6A,
+  },
   {
     title: "Let's build your own Wayland compositor with smithay",
     sessionLanguage: "日本語",
