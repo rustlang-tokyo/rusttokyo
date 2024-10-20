@@ -60,7 +60,7 @@ export default function index(props: { session: SelectedSession }) {
           pageTitle={
             sessionDescprition(
               props.session.title,
-              props.session.speaker[0].name,
+              props.session.speaker.at(0)?.name ?? "",
             ).en
           }
         />

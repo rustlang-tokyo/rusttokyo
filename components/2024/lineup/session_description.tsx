@@ -101,7 +101,7 @@ export function SessionDescription(props: {
         </Heading>
         {/* translate はよくわからんけど必須フィールドになっている。。。 */}
         <TwitterShareButton
-          title={`${props.session.title} by ${props.session.speaker[0].name} | Rust Tokyo 2024`}
+          title={`${props.session.title} by ${props.session.speaker.at(0)?.name ?? ""} | Rust Tokyo 2024`}
           url={`https://rust.tokyo${props.session.pagePath}`}
           translate={undefined}
         >
