@@ -9,6 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { BiCalendarPlus } from "react-icons/bi";
+import { RiTicket2Line } from "react-icons/ri";
 
 export function Eyecatch(props: {
   isPc: boolean;
@@ -37,14 +38,14 @@ export function Eyecatch(props: {
           </Link>
         </Button>
       </Box>
-      {/* <Box mt="20px">
+      <Box mt="20px">
         <Button leftIcon={<RiTicket2Line />} width={275.4}>
           <Link href="https://ti.to/rust-tokyo/2024" isExternal>
             {props.textSource.purchaseTicketText}
           </Link>
         </Button>
       </Box>
-      <Box mt="20px">
+      {/* <Box mt="20px">
         <Button leftIcon={<RiTicket2Line />} width={275.4}>
           <Link href="https://rust.connpass.com/event/296283/" isExternal>
             {props.textSource.registerAttendOnline}
