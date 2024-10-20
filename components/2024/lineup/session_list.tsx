@@ -1,6 +1,8 @@
+import { trackHeadlinesA, trackHeadlinesB } from "@/constants/2024/css/css";
 import type { SelectedSession } from "@/constants/2024/lineup/context";
 import type { SpeakerInfo } from "@/constants/2024/lineup/speaker";
 import type { SessionListPageTexts } from "@/constants/2024/lineup/text";
+import * as track from "@/constants/2024/lineup/track";
 import {
   Avatar,
   Badge,
@@ -26,9 +28,15 @@ import styles from "./style.module.css";
 function SessionCard(props: {
   textSource: SessionListPageTexts;
   session: SelectedSession;
+  isPc: boolean;
 }) {
   return (
-    <GridItem area={props.session.area} borderWidth={1} p={8}>
+    <GridItem
+      area={props.session.area}
+      borderWidth={track.borderWidth(props.session.track)}
+      borderColor={track.borderColor(props.session.track)}
+      p={8}
+    >
       <Box pb={2}>
         <Wrap>
           {props.session.speaker.map((speaker: SpeakerInfo) => (
@@ -57,20 +65,27 @@ function SessionCard(props: {
             <span>{props.session.title}</span>
           )}
         </Heading>
-        <HStack pt={2}>
-          <Icon as={FaClock} color={"white"} />
-          <Text fontSize="sm">
-            {props.session.startFrom}-{props.session.endAt} (JST)
-          </Text>
-        </HStack>
-        {props.session.track && (
-          <HStack pt={2}>
-            <Icon as={MdPlace} color={"white"} />
-            <Text fontSize="sm">
-              {props.textSource.track} {props.session.track}
-            </Text>
-          </HStack>
-        )}
+
+        <Wrap pt={2} spacing={props.isPc ? 3 : 1}>
+          {props.session.track && (
+            <WrapItem>
+              <HStack pt={2} color={track.color(props.session.track)}>
+                <Icon as={MdPlace} />
+                <Text fontSize="sm">
+                  {props.textSource.track} {props.session.track}
+                </Text>
+              </HStack>
+            </WrapItem>
+          )}
+          <WrapItem>
+            <HStack pt={2}>
+              <Icon as={FaClock} color={"white"} />
+              <Text fontSize="sm">
+                {props.session.startFrom}-{props.session.endAt} (JST)
+              </Text>
+            </HStack>
+          </WrapItem>
+        </Wrap>
       </Box>
 
       <Box pb={6}>
@@ -141,16 +156,21 @@ export function SessionList(props: {
       gap={8}
     >
       <GridItem area="header / A">
-        <Heading size="md">{props.textSource.track} A</Heading>
+        <Heading size="md" className={trackHeadlinesA}>
+          {props.textSource.track} A
+        </Heading>
       </GridItem>
       <GridItem area="header / B">
-        <Heading size="md">{props.textSource.track} B</Heading>
+        <Heading size="md" className={trackHeadlinesB}>
+          {props.textSource.track} B
+        </Heading>
       </GridItem>
       {props.sessions.map((session: SelectedSession) => (
         <SessionCard
           key={session.id}
           textSource={props.textSource}
           session={session}
+          isPc={props.isPc}
         />
       ))}
     </Grid>
@@ -160,7 +180,11 @@ export function SessionList(props: {
         .sort((a, b) => a.order - b.order)
         .map((session: SelectedSession) => (
           <Box key={session.id} mb={8}>
-            <SessionCard textSource={props.textSource} session={session} />
+            <SessionCard
+              textSource={props.textSource}
+              session={session}
+              isPc={props.isPc}
+            />
           </Box>
         ))}
     </>

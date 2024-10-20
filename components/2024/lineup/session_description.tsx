@@ -1,6 +1,7 @@
 import type { SelectedSession } from "@/constants/2024/lineup/context";
 import type { SpeakerInfo } from "@/constants/2024/lineup/speaker";
 import type { SessionListPageTexts } from "@/constants/2024/lineup/text";
+import * as track from "@/constants/2024/lineup/track";
 import {
   Badge,
   Box,
@@ -42,10 +43,23 @@ export function SessionDescription(props: {
   const headlineFontSize = props.isPc ? "lg" : "md";
 
   return (
-    <Box borderWidth={1} p={containerPad} mb={2}>
+    <Box
+      borderWidth={track.borderWidth(props.session.track)}
+      borderColor={track.borderColor(props.session.track)}
+      p={containerPad}
+      mb={2}
+    >
       <Box pb={8}>
         <Heading size={headlineFontSize}>{props.session.title}</Heading>
         <Wrap pt={2} spacing={props.isPc ? 3 : 1}>
+          <WrapItem>
+            <HStack color={track.color(props.session.track)}>
+              <Icon as={MdPlace} />
+              <Text fontSize="sm">
+                {props.textSource.track} {props.session.track}
+              </Text>
+            </HStack>
+          </WrapItem>
           <WrapItem>
             <HStack>
               <Icon as={FaClock} color={"white"} />
@@ -56,16 +70,6 @@ export function SessionDescription(props: {
           </WrapItem>
           <WrapItem>
             <Wrap>
-              <WrapItem>
-                <Badge variant="solid" colorScheme="green">
-                  <HStack>
-                    <Icon as={MdPlace} color={"white"} />
-                    <Text>
-                      {props.textSource.track} {props.session.track}
-                    </Text>
-                  </HStack>
-                </Badge>
-              </WrapItem>
               <WrapItem>
                 <Badge variant="solid" colorScheme="purple">
                   {props.textSource.sessionLanguage}:{" "}
