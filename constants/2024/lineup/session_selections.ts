@@ -159,7 +159,7 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
     title: "smithay で作って動かす Wayland compositor",
     sessionLanguage: "日本語",
     elevatorPitch:
-      "本発表では Linux の GUI の中核に位置する Wayland compositor を Rust で作ることについてお話します. Wayland compositor は大まかに言えばウインドウの配置や表示, キーボードやマウスの管理などを担うソフトウェアです. 多くの他の OS ではこれらは OS の管理下であり弄ることはできませんが, Linux では自作して自分の好みの挙動にすることができます. そんな大事なスタックですが Rust には `cargo`, `smithay`, `winit` がありこれらのおかげで簡単に始められます. 自作, しよう!!",
+      "本発表では Linux の GUI の中核に位置する Wayland compositor を Rust で作ることについてお話します. Wayland compositor は大まかに言えばウインドウの配置や表示, キーボードやマウスの管理などを担うソフトウェアです. 多くの他の OS ではこれらは OS の管理下であり弄ることはできませんが, Linux では自作して自分の好みの挙動にすることができます. そんな大事なスタックですが Rust には cargo, smithay, winit がありこれらのおかげで簡単に始められます. 自作, しよう!!",
     speaker: [keno],
     pagePath: `/lineup/${session6B.id}`,
     ...session6B,

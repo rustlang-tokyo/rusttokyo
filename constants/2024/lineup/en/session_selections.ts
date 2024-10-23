@@ -163,7 +163,7 @@ In this session, I will discuss the existing tools, along with the technical det
     title: "Let's build your own Wayland compositor with smithay",
     sessionLanguage: "日本語",
     elevatorPitch:
-      "In this talk, we'll explore how to build an Wayland compositor in Rust, which is a core component of Linux GUI environment. Roughly speaking, Wayland compositor is responsible for window arrangement and display, keyboards and mice management, etc. In other OS, this stack is under control of the OS and tightly coupled to it, but one can choose what you like and replace the default with it in Linux. Moreover, one can build their own Wayland compositor. Rust has `cargo`, `smithay`, `winit` and enables one to start writing such an important stack easily. Let's build your own Wayland compositor!",
+      "In this talk, we'll explore how to build an Wayland compositor in Rust, which is a core component of Linux GUI environment. Roughly speaking, Wayland compositor is responsible for window arrangement and display, keyboards and mice management, etc. In other OS, this stack is under control of the OS and tightly coupled to it, but one can choose what you like and replace the default with it in Linux. Moreover, one can build their own Wayland compositor. Rust has cargo, smithay, winit and enables one to start writing such an important stack easily. Let's build your own Wayland compositor!",
     speaker: [keno_en],
     pagePath: `/lineup/en/${session6B.id}`,
     ...session6B,

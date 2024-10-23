@@ -31,7 +31,7 @@ export const 名和雅実_en = 名和雅実;
 
 export const ynqa_en: SpeakerInfo = {
   name: "ynqa",
-  profile: "A software engineer who tinkers with Kubernetes manifestsÏ",
+  profile: "A software engineer who tinkers with Kubernetes manifests",
   twitterAccount: "_ynqa",
   githubAccount: "ynqa",
   avatarSrc: `${avatarBaseSrc}ynqa.png`,
@@ -137,7 +137,7 @@ export const Satoshi_Yoshikawa_en = Satoshi_Yoshikawa;
 export const David_Lu_en: SpeakerInfo = {
   name: "David Lu",
   profile:
-    "David Lu is an undergraduate student from the University of British Columbia, currently working at NTT Software Innovation Center as a Research Intern exploring optimal methods of utilizing the NVIDIA Bluefield series Data Processing Unit/SmartNIC. His general research interests are in distributed computing, operating systems and programming languages.",
+    "David Lu is an undergraduate student from the University of British Columbia. His general research interests are in distributed computing, operating systems and programming languages.",
   avatarSrc: `${avatarBaseSrc}david_lu.jpg`,
 };
 
