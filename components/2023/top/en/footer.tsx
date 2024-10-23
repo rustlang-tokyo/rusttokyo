@@ -52,7 +52,7 @@ export function Footer() {
             </Text>
           </Box>
           <Box>
-            <Text>Post Conferences</Text>
+            <Text>Past Conferences</Text>
             <PostConferences conferences={conferences} />
           </Box>
         </HStack>
