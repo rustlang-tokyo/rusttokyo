@@ -2,6 +2,7 @@ import type {
   BronzeSponsor,
   GoldSponsor,
   SilverSponsor,
+  VenueSponsor,
 } from "@/types/2024/types";
 
 export type GoldSponsorList = {
@@ -13,28 +14,30 @@ export const goldSponsors: GoldSponsorList = {
   ja: [
     {
       id: 0,
-      name: "ユニークビジョン株式会社",
+      name: "TODO1",
       description:
-        "【バズったあのキャンペーンもユニークビジョン!?】\n" +
-        "ユニークビジョンはSNSで企業と消費者のより良いブランド体験を創出することを使命としているエンジニア中心の会社です。開発するSNSマーケティングツール「Belugaシリーズ」は、飲料・ゲーム・化粧品・アパレルをはじめとして多くの業界で利用されています。",
-      logoImagePath: "/static/2024/sponsors/uniquevision.jpg",
-      url: "https://www.uniquevision.co.jp/",
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
     {
       id: 1,
-      name: "AGC株式会社",
+      name: "TODO2",
       description:
-        "「AGC、いつも世界の大事な一部」を私達の使命に掲げ、社会のニーズに応える独自の素材、ソリューションを提供しています。2024年にデジタル戦略の立案・支援・人財育成を担う組織として、デジタル・イノベーション推進部を新設しました。スピード感を持った開発のためソフトウェアの内製にこだわりRustを含め最新技術のキャッチアップも積極的に行っています。",
-      logoImagePath: "/static/2024/sponsors/agc.png",
-      url: "https://www.agc.com/recruiting/careers/",
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
     {
       id: 2,
-      name: "FairyDevices",
+      name: "TODO3",
       description:
-        "自社開発の首掛け型ウェアラブルデバイスTHINKLETと、音声AIプラットフォームmimiによって、現場DXサービスを提供しています。私たちはデバイスと音声処理技術をもとに、インターネットに存在しない情報をデータ化し、機械知能が理解可能にすること、その結果として人類のあらゆる知識を叡智として流通可能にすることを目指しています。",
-      logoImagePath: "/static/2024/sponsors/fairydevices.png",
-      url: "https://fairydevices.jp/",
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO\n" +
+        "TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
   ],
   en: [], // Copied from ja later
@@ -50,25 +53,25 @@ export type SilverSponsorList = {
 export const silverSponsors: SilverSponsorList = {
   ja: [
     {
-      name: "株式会社ゆめみ",
-      logoImagePath: "/static/2024/sponsors/yumemi.png",
-      url: "https://www.yumemi.co.jp/",
+      name: "TODO4",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
       inverse: true,
     },
     {
-      name: "株式会社ペイルド",
-      logoImagePath: "/static/2024/sponsors/paild.png",
-      url: "https://www.paild.co.jp/",
+      name: "TODO5",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
     {
-      name: "株式会社LabBase",
-      logoImagePath: "/static/2024/sponsors/labbase.png",
-      url: "https://labbase.co.jp/",
+      name: "TODO6",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
     {
-      name: "パイオニア株式会社",
-      logoImagePath: "/static/2024/sponsors/pioneer.png",
-      url: "https://jpn.pioneer/ja/",
+      name: "TODO7",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
   ],
   en: [], // Copied from ja later
@@ -84,17 +87,35 @@ export type BronzeSponsorList = {
 export const bronzeSponsors: BronzeSponsorList = {
   ja: [
     {
-      name: "株式会社estie",
-      logoImagePath: "/static/2024/sponsors/estie.png",
-      url: "https://www.estie.jp/",
+      name: "TODO8",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
     {
-      name: "京都小松法律事務所",
-      logoImagePath: "/static/2024/sponsors/kyoto_komatsu_law_firm.png",
-      url: "https://komatsu.kyoto.jp/",
+      name: "TODO9",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
     },
   ],
   en: [], // Copied from ja later
 };
 
 bronzeSponsors.en = bronzeSponsors.ja;
+
+export type VenueSponsorList = {
+  ja: VenueSponsor[];
+  en: VenueSponsor[];
+};
+
+export const venueSponsors: VenueSponsorList = {
+  ja: [
+    {
+      name: "TODO10",
+      logoImagePath: "",
+      url: "https://rust.tokyo/",
+    },
+  ],
+  en: [], // Copied from ja later
+};
+
+venueSponsors.en = venueSponsors.ja;

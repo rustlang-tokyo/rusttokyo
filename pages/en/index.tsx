@@ -5,9 +5,11 @@ import { Location } from "@/components/2024/top/en/location";
 import { Eyecatch } from "@/components/2024/top/eyecatch";
 import { Organizers } from "@/components/2024/top/organizers";
 import { Staff } from "@/components/2024/top/staff";
+import { headlines } from "@/constants/2024/css/css";
 import { topPagePath } from "@/constants/2024/header/navigation";
 import { topI18nTexts } from "@/constants/2024/top/texts";
-import { Box } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
+import { Box, Center, Container, Heading, VStack } from "@chakra-ui/react";
 import useMedia from "use-media";
 
 export default function index() {
@@ -26,25 +28,27 @@ export default function index() {
       >
         <Eyecatch isPc={isPc} textSource={topI18nTexts.en} />
       </Box>
-      {/*<Box bg="vampireBlack.100" py={{ base: 12 }}>*/}
-      {/*  <Container maxW="container.xl">*/}
-      {/*    <Center>*/}
-      {/*      <VStack spacing={4}>*/}
-      {/*        <Heading className={headlines} as="h2" size="2xl">*/}
-      {/*          SPONSORS*/}
-      {/*        </Heading>*/}
+      <Box bg="vampireBlack.100" py={{ base: 12 }}>
+        <Container maxW="container.xl">
+          <Center>
+            <VStack spacing={4}>
+              <Heading className={headlines} as="h2" size="2xl">
+                SPONSORS
+              </Heading>
 
-      {/*        <SponsorList*/}
-      {/*          goldSponsors={goldSponsors.en}*/}
-      {/*          silverSponsors={silverSponsors.en}*/}
-      {/*          bronzeSponsors={bronzeSponsors.en}*/}
-      {/*          isPc={isPc}*/}
-      {/*          textSource={topI18nTexts.en}*/}
-      {/*        />*/}
-      {/*      </VStack>*/}
-      {/*    </Center>*/}
-      {/*  </Container>*/}
-      {/*</Box>*/}
+              <Text fontSize="2xl">COMING SOON</Text>
+              {/*<SponsorList
+                goldSponsors={goldSponsors.en}
+                silverSponsors={silverSponsors.en}
+                bronzeSponsors={bronzeSponsors.en}
+                venueSponsors={venueSponsors.en}
+                isPc={isPc}
+                textSource={topI18nTexts.en}
+              />*/}
+            </VStack>
+          </Center>
+        </Container>
+      </Box>
       <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
         <Location isPc={isPc} />
       </Box>

@@ -3,16 +3,19 @@ import type {
   BronzeSponsor,
   GoldSponsor,
   SilverSponsor,
+  VenueSponsor,
 } from "@/types/2024/types";
 import { Heading, Wrap } from "@chakra-ui/react";
 import { BronzeSponsorCard } from "./bronze_sponsor_card";
 import { GoldSponsorCard } from "./gold_sponsor_card";
 import { SilverSponsorCard } from "./silver_sponsor_card";
+import { VenueSponsorCard } from "./venue_sponsor_card";
 
 export function SponsorList(props: {
   goldSponsors: GoldSponsor[];
   silverSponsors: SilverSponsor[];
   bronzeSponsors: BronzeSponsor[];
+  venueSponsors: VenueSponsor[];
   isPc: boolean;
   textSource: JaTopTextList | EnTopTextList;
 }) {
@@ -63,6 +66,22 @@ export function SponsorList(props: {
             <BronzeSponsorCard
               key={bronzeSponsor.name}
               item={bronzeSponsor}
+              isPc={props.isPc}
+            />
+          );
+        })}
+      </Wrap>
+
+      <Heading as="h3" size="md" pt={8}>
+        {props.textSource.venueSponsor}
+      </Heading>
+
+      <Wrap spacing={bSpacing} justify="center">
+        {props.venueSponsors.map((venueSponsor: VenueSponsor) => {
+          return (
+            <VenueSponsorCard
+              key={venueSponsor.name}
+              item={venueSponsor}
               isPc={props.isPc}
             />
           );

@@ -3,6 +3,7 @@ export type SpeakerInfo = {
   profile: string;
   twitterAccount?: string;
   githubAccount?: string;
+  qiitaAccount?: string;
   avatarSrc: string;
   // padding for avatar icon.
   padding?: number;
@@ -14,77 +15,151 @@ const organiserAvatarBase = "/static/2024/organizers/";
 export const dorayakikun: SpeakerInfo = {
   name: "Tomohide Takao",
   profile: "",
-  twitterAccount: "@dorayakikun",
+  twitterAccount: "dorayakikun",
   avatarSrc: `${organiserAvatarBase}dorayakikun.png`,
 };
 
 const avatarBaseSrc = "/static/2024/speakers/";
 
-export const speaker1: SpeakerInfo = {
-  name: "Takumi Shimada",
+export const 名和雅実: SpeakerInfo = {
+  name: "名和雅実",
+  profile: "Fairy Devices Inc., Product Development Department, Engineer",
+  avatarSrc: `${avatarBaseSrc}masami_nawa.png`,
+};
+
+export const 名和雅実_en = 名和雅実;
+
+export const ynqa_en: SpeakerInfo = {
+  name: "ynqa",
+  profile: "A software engineer who tinkers with Kubernetes manifestsÏ",
+  twitterAccount: "_ynqa",
+  githubAccount: "ynqa",
+  avatarSrc: `${avatarBaseSrc}ynqa.png`,
+};
+
+export const ynqa = ynqa_en;
+
+export const tomoikey: SpeakerInfo = {
+  name: "tomoikey",
+  profile: `新卒2年目のWEBエンジニアです。
+本業では Go や Rust を書いていて、副業では Scala を書いています。`,
+  githubAccount: "tomoikey",
+  qiitaAccount: "tomoikey",
+  twitterAccount: "scarustacean",
+  avatarSrc: `${avatarBaseSrc}tomoikey.jpeg`,
+};
+
+export const tomoikey_en: SpeakerInfo = {
+  name: "tomoikey",
   profile:
-    "Rustを用いた組込みシステムのプログラミング開発に惹かれ、Twitterやブログで情報発信を行う。インプレスR＆Dで「Rustで始める自作組込みOS入門」を出版。 現在は株式会社IdeinでIoTプラットフォームの開発を行っている。",
-  twitterAccount: "@garasubo",
-  avatarSrc: `${avatarBaseSrc}s_1.jpg`,
+    "I’m a second-year web engineer. I write Go and Rust in my main job, and Scala in my side job.",
+  githubAccount: "tomoikey",
+  qiitaAccount: "tomoikey",
+  twitterAccount: "scarustacean",
+  avatarSrc: `${avatarBaseSrc}tomoikey.jpeg`,
 };
 
-export const speaker2: SpeakerInfo = {
-  name: "Yuta Ide",
+export const yuki_uchida: SpeakerInfo = {
+  name: "yuki-uchida",
   profile:
-    "日本経済新聞社のWebエンジニアとして、日経電子版の基盤改善をしています。最近はオブザーバビリティの改善に関心があります。",
-  twitterAccount: "@sadnessOjisan",
-  avatarSrc: `${avatarBaseSrc}s_2.jpg`,
+    "NTTコミュニケーションズ株式会社 SkyWay推進室所属のWebRTC Researcher。WebRTCプラットフォームの新機能を開発するためのR&Dに携わっている",
+  twitterAccount: "yuki_wtz",
+  avatarSrc: `${avatarBaseSrc}yuki-uchida.png`,
 };
 
-export const speaker3: SpeakerInfo = {
-  name: "Yoshifumi Kawai",
+export const yuki_uchida_en = yuki_uchida;
+
+export const Motoyuki_Kimura: SpeakerInfo = {
+  name: "Motoyuki Kimura",
   profile:
-    "C#愛好家。サーバーとクライアントを共にC#で実装するフレームワークの開発とアーキテクチャを推進している。長年のC#愛好家が高じてCygamesと共にC#専門の開発会社「Cysharp」を設立。OSS開発にも関心が深く、GitHub上に50以上の公開、そのうち複数のライブラリが世界的にも強く支持され、多数のゲームタイトルに採用されている。C#の手の届かない範囲をうまく補完するための言語としてRustに注目中。2011年よりMicrosoft MVP for Developer Technologies(C#)。CEDEC AWARDS 2022 エンジニアリング部門優秀賞。「.NETのクラスライブラリ設計 改訂新版」監訳。",
-  twitterAccount: "@neuecc",
-  avatarSrc: `${avatarBaseSrc}s_3.jpg`,
+    "Rust Software Engineer, interested in performance, observability, etc. One of the maintainers of the tokio-rs ecosystem.",
+  twitterAccount: "mox692",
+  avatarSrc: `${avatarBaseSrc}mox692.jpeg`,
 };
 
-export const speaker4: SpeakerInfo = {
-  name: "Tatsuya Kawano",
+export const Motoyuki_Kimura_en = Motoyuki_Kimura;
+
+export const ahogappa: SpeakerInfo = {
+  name: "ahogappa",
+  profile: `STORES でwebエンジニアをしています。
+Rubyで書けるゲームエンジンやワンバイナリツールを作ったりしてます。`,
+  githubAccount: "ahogappa0613",
+  avatarSrc: `${avatarBaseSrc}ahogappa.PNG`,
+};
+
+export const Haruki_Shimada: SpeakerInfo = {
+  name: "Haruki Shimada",
   profile:
-    "Rustをこよなく愛するフリーランスのソフトウェアエンジニア。フェアリーデバイセズ株式会社にてRustを使ったWebサービスの開発に携わっています。共著に『実践Rust入門』（技術評論社、2019年出版）",
-  twitterAccount: "@tatsuya6502",
-  avatarSrc: `${avatarBaseSrc}s_4.jpg`,
+    "スタートアップでエンジニアをしています。PaidyでRustを使ったクレジットカードの開発もしていました。",
+  githubAccount: "peaske7",
+  twitterAccount: "HarukiJay",
+  avatarSrc: `${avatarBaseSrc}peaske7.webp`,
 };
 
-export const speaker5: SpeakerInfo = {
-  name: "kajiwara",
-  profile: "Chatwork 株式会社所属の開発者です。",
-  avatarSrc: `${avatarBaseSrc}s_5.jpg`,
-};
-
-export const speaker6: SpeakerInfo = {
-  name: "Florian Gilcher",
-  profile: `Florian Gilcher is one of the co-founders and management directors of Ferrous Systems. Previously, he was part of the Rust project, as part of the community and core team, and a co-organiser of the Rust Berlin Meetup and the RustFest conference.
-
-His current driving motiviation is bringing Rust to the industry, currently to the industries of highest assurances, for example automotive and aerospace. For that, he’s currently leading the Ferrocene project - the qualification of the Rust project to highest assurances.
-`,
-  twitterAccount: "@argorak",
-  avatarSrc: `${avatarBaseSrc}s_6.jpg`,
-};
-
-export const speaker4_en: SpeakerInfo = {
-  name: "Tatsuya Kawano",
+export const Haruki_Shimada_en: SpeakerInfo = {
+  name: "peaske7",
   profile:
-    'A freelance software engineer who loves Rust. Building Rust-based web services at Fairy Devices, Inc. Co-author of a Japanese book "A Practical Introduction to Rust". (gihyo.jp, published in 2019)',
-  twitterAccount: "@tatsuya6502",
-  avatarSrc: `${avatarBaseSrc}s_4.jpg`,
+    "Software engineer at a startup. I worked on credit card backends with Rust at Paidy.",
+  githubAccount: "peaske7",
+  twitterAccount: "HarukiJay",
+  avatarSrc: `${avatarBaseSrc}peaske7.webp`,
 };
 
-export const sponsor1: SpeakerInfo = {
-  name: "吉中 泰輝、山下 徹",
-  profile: "",
-  avatarSrc: `${avatarBaseSrc}sponsor_1.png`,
+export const ahogappa_en: SpeakerInfo = {
+  name: "ahogappa",
+  profile: `I am a web application developer at STORES, Inc.
+As a hobby, I develop game engines and tools to pack ruby in one binary.`,
+  githubAccount: "ahogappa0613",
+  avatarSrc: `${avatarBaseSrc}ahogappa.PNG`,
 };
 
-export const sponsor2: SpeakerInfo = {
-  name: "青柳康平",
-  profile: "",
-  avatarSrc: `${avatarBaseSrc}sponsor_2.jpg`,
-  padding: 1,
+export const keno: SpeakerInfo = {
+  name: "keno (Ken Okada) ",
+  profile:
+    "keno, a small sawagani/Loves math, coffee, Emacs, Lisp, Rust, software talk",
+  twitterAccount: "keno_ss",
+  avatarSrc: `${avatarBaseSrc}kenoss.png`,
 };
+
+export const keno_en = keno;
+
+export const Satoshi_Yoshikawa: SpeakerInfo = {
+  name: "Satoshi Yoshikawa",
+  profile: `Fairy Devices株式会社のプロダクト開発部部長兼ソフトウェア開発者。
+「実践Rustプログラミング入門」（秀和システム、共著）、「RustによるWebアプリケーション開発 設計からリリース・運用まで」（講談社サイエンティフィック、共著）を執筆。`,
+  githubAccount: "emergent",
+  twitterAccount: "emergent",
+  avatarSrc: `${avatarBaseSrc}Satoshi_Yoshikawa.jpeg`,
+};
+
+export const Satoshi_Yoshikawa_en = Satoshi_Yoshikawa;
+
+export const David_Lu_en: SpeakerInfo = {
+  name: "David Lu",
+  profile:
+    "David Lu is an undergraduate student from the University of British Columbia, currently working at NTT Software Innovation Center as a Research Intern exploring optimal methods of utilizing the NVIDIA Bluefield series Data Processing Unit/SmartNIC. His general research interests are in distributed computing, operating systems and programming languages.",
+  avatarSrc: `${avatarBaseSrc}david_lu.jpg`,
+};
+
+export const David_Lu = David_Lu_en;
+
+export const Shriram_Balaji_en: SpeakerInfo = {
+  name: "Shriram Balaji",
+  profile:
+    "Senior Software Engineer at Microsoft tinkering with systems languages, databases and things on the web",
+  twitterAccount: "shrirambalaji",
+  avatarSrc: `${avatarBaseSrc}Shriram_Balaji.jpg`,
+};
+
+export const Shriram_Balaji = Shriram_Balaji_en;
+
+export const Satoru_Nishio: SpeakerInfo = {
+  name: "Satoru Nishio",
+  profile: `"2児の父をしながら株式会社MIERUNEでGISとWeb開発を行う、Engineering Managerです！
+以下のような事柄に興味があります！
+Python / Rust / GIS / 点群 / 3D Tiles / AWS / WebGL / PLATEAU ADVOCATE / Cesium Certified Developer"`,
+  twitterAccount: "nokonoko_1203",
+  avatarSrc: `${avatarBaseSrc}satoru_nishio.JPG`,
+};
+
+export const Satoru_Nishio_en = Satoru_Nishio;

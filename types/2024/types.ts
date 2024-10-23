@@ -20,6 +20,12 @@ export type BronzeSponsor = {
   url: string;
 };
 
+export type VenueSponsor = {
+  name: string;
+  logoImagePath: string;
+  url: string;
+};
+
 export type JobBoardSponsor = {
   name: string;
   imgSrc: string;

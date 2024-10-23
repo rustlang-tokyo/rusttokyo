@@ -1,116 +1,240 @@
 import {
   type SelectedSession,
-  endingBase,
-  openingBase,
-  session1Base,
-  session2Base,
-  session3Base,
-  session4Base,
-  session5Base,
-  session6Base,
-  sponsor1Base,
-  sponsor2Base,
+  closing,
+  opening,
+  session1A,
+  session1B,
+  session2A,
+  session2B,
+  session3A,
+  session3B,
+  session4A,
+  session4B,
+  session5A,
+  session5B,
+  session6A,
+  session6B,
+  session7A,
+  session7B,
+  session8A,
+  session8B,
+  session9A,
+  session9B,
+  session10A,
+  session10B,
 } from "./context";
 import {
+  David_Lu,
+  Haruki_Shimada,
+  Motoyuki_Kimura,
+  Satoru_Nishio,
+  Satoshi_Yoshikawa,
+  Shriram_Balaji,
+  ahogappa,
   dorayakikun,
-  speaker1,
-  speaker2,
-  speaker3,
-  speaker4,
-  speaker5,
-  speaker6,
-  sponsor1,
-  sponsor2,
+  keno,
+  tomoikey,
+  ynqa,
+  yuki_uchida,
+  名和雅実,
 } from "./speaker";
 
 export const selectedSessions: SelectedSession[] = [
   {
-    title: "IoTプラットフォーム開発におけるRustの活用",
-    elevatorPitch: `このプレゼンテーションではでは2017年というかなり早期から採用していたIdeinならではの経験を皆様と共有しようと考えています。
-具体的にはIdeinでRustを早期から導入した経緯からRustや周辺エコシステムの変更に伴うコードの変遷（async/awaitの導入など）、Rustを実プロダクトで使うときの課題とその対策（CIでの工夫や実プロダクトで起きたトラブル）を話していきます。
-Rustを実環境で導入する企業は増えてきていますが、早期から導入していた数少ない企業としてRustの進化の歴史とその影響を話せればと思います。`,
-    speaker: [speaker1],
-    description: "",
-    pagePath: "/2024/lineup/1",
-    ...session1Base,
+    title: "オープニング",
+    sessionLanguage: "日本語",
+    elevatorPitch: "Rust.Tokyo チームよりご挨拶申し上げます。",
+    speaker: [dorayakikun],
+    ...opening,
   },
   {
-    title: "かにさんタワーバトル",
+    title: "大規模プロダクトのための Cargo Workspace ベストプラクティス",
+    sessionLanguage: "日本語",
+    elevatorPitch: `Rust での大規模なプロダクト開発において、モジュールを使って機能を分けると各コンポーネントの責務を管理しづらくなっていきます。Cargo の Workspace 機能を使うと複数クレートを一箇所で管理でき、責務を分けやすくなります。
+
+特にバックエンドを開発していると、コンポーネントの責務ごとに依存したいクレートが異なる場合があります。Cargo Workspace を使ってクレートを分けると Cargo.toml も分かれるので依存関係の管理がしやすくなります。しかし、クレートを分けると別に考えることが出てきます。
+
+自社プロダクトのバックエンド開発を 3 年ほど継続した経験に基づくベストプラクティスを共有できればと思います。`,
+    speaker: [名和雅実],
+    pagePath: `/lineup/${session1A.id}`,
+    ...session1A,
+  },
+  {
+    title: "Rust で TUI アプリケーションを作った話",
+    sessionLanguage: "日本語",
+    elevatorPitch: `jnv という TUI アプリケーションを Rust で作成し、公開しました。
+ターミナル上で入力された JSON に対してインタラクティブに jq フィルタを実行できます。
+
+この経験をもとに Rust で TUI アプリケーションを作成し、リリースするまでのプロセスを解説します。
+具体的には Rust の TUI ライブラリの紹介、jnv の開発について、および cargo-dist を利用した配布方法について取り扱います。
+技術的な知見を深めたい方々にも、楽しんでいただける内容となっています。`,
+    speaker: [ynqa],
+    pagePath: `/lineup/${session1B.id}`,
+    ...session1B,
+  },
+  {
+    title: "新卒2年目が挑んだ!! RustとOSS、実は怖くない話",
+    sessionLanguage: "日本語",
     elevatorPitch:
-      "Rust はサーバー開発においても堅牢さと生産性を提供してくれる素晴らしい言語です。しかし言語自体は HTTP サーバーの機能を提供していないため、Rust で HTTP サーバーを作るためには何かしらのフレームワークを選定しなければいけません。筆者は現在、社内の古い世代のシステムを、メンテナブルで長生きするシステムに置き換える仕事をしており、その際にRustとaxumを導入しました。ただその際にライブラリやエコシステムに振り回されないような技術選定を考えて欲しいというオーダーがあり、axumを導入するかは最後までとても悩みました。結果的に選択しましたが、それはtowerによって別FWに乗り換えられることに気づいたからです。このトークでは、HTTPサーバーそのものの復習、サーバーの開発にRustが適している理由、axumの嬉しさ、towerによる相互乗り換えの方法について話します。",
-    speaker: [speaker2],
-    description: "",
-    pagePath: "/2024/lineup/2",
-    ...session2Base,
+      "このセッションでは、OSS貢献の第一歩を踏み出せないRustプログラマに向けて、新卒エンジニアの私が実体験をもとにその一歩を支援します。 OSS貢献を通じて得た喜びや課題、Rustの特徴を具体的に紹介し、参加者が恐怖心を克服し挑戦できるようサポートします。 また、自作OSS refined_type の紹介を通じて、型を活用した実行時安全性の向上と効率的なバリデーション処理の方法も共有し、Rustの活用の幅を広げる内容にしています。",
+    speaker: [tomoikey],
+    pagePath: `/lineup/${session2A.id}`,
+    ...session2A,
   },
   {
     title:
-      "他言語がメインの場合のRustの活用法 - csbindgenによるC# x Rust FFI実践事例",
-    elevatorPitch:
-      "csbindgenというRust <-> C#のFFIを自動化するライブラリを開発し、OSSとして今年の3月に公開しました。このライブラリを元にして、C#（他言語）を中心にしたアプリケーションの中でのRustの使い所、Rust実装上でのFFIのテクニック、そしてcsbindgenの実際の利用例を紹介します。",
-    speaker: [speaker3],
-    description: "",
-    pagePath: "/2024/lineup/3",
-    ...session3Base,
-  },
-  {
-    title: "並行キャッシュライブラリの開発で得られた知見",
-    elevatorPitch: `本セッションではMokaというライブラリの開発を通して得られた経験や課題を共有します。Mokaは私が2021年から継続的に開発している並行キャッシュです。crates.ioやsentry.ioのバックエンドに採用され、高負荷なWebサービスを支えています。  
+      "Rustでマルチスレッドプログラミング！ リアルタイム通信ではどのようにスレッドを立てるのか",
+    sessionLanguage: "日本語",
+    elevatorPitch: `ビデオ会議や映像配信などにおいては、メディアを高速・並列に捌くというのが非常に重要です。映像は秒間1Mbytes以上、音声は数百kbytesになることもあるため、それらのメディアを捌くサーバーには非常に大きな負荷が掛かります。
 
-セッションではキャッシュ固有の話題に触れた後、非同期ランタイムの並行性を損なわないデータ構造の選択方法など、一般的な並行プログラミングに応用できる知識も交えて紹介します。また、開発で苦労した点なども共有します。`,
-    speaker: [speaker4],
-    description: "",
-    pagePath: "/2024/lineup/4",
-    ...session4Base,
-  },
-  {
-    title: "Rust 業務経験がない開発者で集まって汎用ツールを開発した話",
-    elevatorPitch: `Chatwork 株式会社では Roggol という汎用ツールを開発しています。これは CQRS における Read Model の更新を行うコンポーネントを汎用的に実装したものです。 しかし、このアプリケーションの実装を開始した当時、社内には、プライベートで Rust を触っている人はいましたが、Rust の業務経験がない開発者しかいませんでした。
+ここで、重要となるのがマルチスレッドプログラミングです。スレッドを使いこなすことで、パフォーマンスを向上させることが可能です。
 
-このセッションでは、そのような状況下で一般的に学習コストが高いと言われている Rust で汎用的なアプリケーションを開発する上で、開発前後で想定通り/想定外だったことや、 どのような点に苦労したか、どのような点で報われたかなどを共有します。`,
-    speaker: [speaker5],
-    description: "",
-    pagePath: "/2024/lineup/5",
-    ...session5Base,
+SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目しており、moq-wasmというOSS公開しています。このOSSでの実装を参照しながら、どのようにマルチスレッドにしていくかを学びましょう。`,
+    speaker: [yuki_uchida],
+    pagePath: `/lineup/${session2B.id}`,
+    ...session2B,
   },
   {
-    title: "Ferrocene - Enabling Rust in Critical Environments",
-    elevatorPitch: `How do we bring Rust regulated industries, particularly safety-critical? Cars? Industrial machinery? Maybe planes?
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session3A,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session3B,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session4A,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session4B,
+  },
+  {
+    title: "Instrumenting Async Runtime",
+    sessionLanguage: "日本語",
+    elevatorPitch: `このセッションでは、私が取り組んでいるTokioアプリ向けのruntime tracingツールを紹介します。
 
-This talk gives an overview what it means to “qualify” the Rust compiler for safety and which approaches Ferrous Systems took to address those needs in Ferrocene.`,
-    speaker: [speaker6],
-    description: "",
-    pagePath: "/2024/lineup/6",
-    ...session6Base,
+Async Rustのモニタリングツールとして、tracing crateやtokio-consoleが登場しましたが、これらはユーザーコードの観測に特化しており、Tokio runtime内部にまで踏み込んだ問題特定には不十分な場合があります。そこで、Tokioランタイムの内部挙動を可視化するtracingツールを開発しています。
+
+本セッションでは、既存ツールの紹介と課題を述べ、runtime tracingの技術的内容と今後の展望を共有します。`,
+    speaker: [Motoyuki_Kimura],
+    pagePath: `/lineup/${session5A.id}`,
+    ...session5A,
   },
   {
-    title: "素材メーカーが内製開発でRustを使っている話",
+    title: "Rustを使ったRubyライブラリの開発",
+    sessionLanguage: "日本語",
+    elevatorPitch: `この発表では、RustでRubyのライブラリ(Gem)を作った話をします。 近年既存のC/C++プログラムをRustに書き換えたものにしていく動きが活発になっており、Rustで動くコードが増えてきています。
+
+一方Rubyは基本的にCで記述されたプログラミング言語ですが、JITコンパイラであるYJITはRustで実装され、GemもRustを使って作成することが容易になっています。
+
+実際に私が開発したGemを例にRustを使って開発したことについて発表します。`,
+    speaker: [ahogappa],
+    pagePath: `/lineup/${session5B.id}`,
+    ...session5B,
+  },
+  {
+    title: "カードバックエンドの結合テストを並列処理に移行した話",
+    sessionLanguage: "日本語",
+    elevatorPitch: `結合テストをマルチスレッドで実行することで、テスト時間を大幅に削減できます。
+テスト実行を並列処理に移行する際の方法や気をつけるべき点などを、実際のカードシステムのバックエンドで移行したときの学びをもとに紹介します。`,
+    speaker: [Haruki_Shimada],
+    pagePath: `/lineup/${session6A.id}`,
+    ...session6A,
+  },
+  {
+    title: "smithay で作って動かす Wayland compositor",
+    sessionLanguage: "日本語",
     elevatorPitch:
-      "AGCは素材メーカーでありながらソフトウェアの内製開発に力を入れており、2021年頃からRustを採用しています。2024年にはソフトウェア開発の専門組織を立ち上げ、Rustの利用先は社内向けWebアプリや最適化アルゴリズムの実装など多岐に渡ります。素材メーカーにおける内製開発の実情も交えつつ、具体的なプロダクトを例にRustの採用に至った経緯、採用して良かった点・苦労した（している）点、Rustを普及するために取り組んでいることなどを紹介します。",
-    speaker: [sponsor1],
-    description: "",
-    ...sponsor1Base,
+      "本発表では Linux の GUI の中核に位置する Wayland compositor を Rust で作ることについてお話します. Wayland compositor は大まかに言えばウインドウの配置や表示, キーボードやマウスの管理などを担うソフトウェアです. 多くの他の OS ではこれらは OS の管理下であり弄ることはできませんが, Linux では自作して自分の好みの挙動にすることができます. そんな大事なスタックですが Rust には `cargo`, `smithay`, `winit` がありこれらのおかげで簡単に始められます. 自作, しよう!!",
+    speaker: [keno],
+    pagePath: `/lineup/${session6B.id}`,
+    ...session6B,
   },
   {
-    title: "Rustがユニークビジョンにもたらした恩恵と苦労　～そしてお返しへ～",
+    title: "ONNX推論ランタイムクレートの比較と実装奮闘記",
+    sessionLanguage: "日本語",
     elevatorPitch:
-      "ユニークビジョンがRustを採用して6年間の取り組みをお話します。良い点や悩ましい点から、その試行錯誤の内幕や、自社で開発したちょっと便利なcrateも紹介します。",
-    speaker: [sponsor2],
-    description: "",
-    ...sponsor2Base,
+      "機械学習の普及に伴いONNXという機械学習モデルを表現するオープンなフォーマットが登場しました。ONNXはTensorFlowやPyTorchなどのフレームワークで学習されたモデルから変換することもでき、多くのモデルがONNXで公開されています。ONNXの実行環境も、onnxruntime（C++）が公式実装として存在するものの、他にもRustで書かれたOSSの推論ランタイムやONNX対応機械学習フレームワークがいくつか存在します。自身の取り組みの中でこれらを調査・比較した経緯とその結果、実装面で奮闘したことなどをお話します。",
+    speaker: [Satoshi_Yoshikawa],
+    pagePath: `/lineup/${session7A.id}`,
+    ...session7A,
   },
   {
-    title: "オープニングセッション",
-    elevatorPitch: "Rust.Tokyo チームよりご挨拶申し上げます。",
-    speaker: [dorayakikun],
-    description: "",
-    ...openingBase,
+    title: "Overcoming Callback Hell When Integrating C into Rust",
+    sessionLanguage: "English",
+    elevatorPitch:
+      "An often overlooked challenge with FFIs found with C-style APIs are callbacks, which hide control flow and often discard type safety. We’ll share our experience creating a safe, runtime-agnostic wrapper for NVIDIA DOCA, which decouples program logic from callbacks while exposing a convenient API.",
+    speaker: [David_Lu],
+    pagePath: `/lineup/${session7B.id}`,
+    ...session7B,
   },
   {
-    title: "クロージングセッション",
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session8A,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session8B,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session9A,
+  },
+  {
+    title: "COMING SOON",
+    sessionLanguage: "日本語",
+    elevatorPitch: "",
+    speaker: [],
+    ...session9B,
+  },
+  {
+    title:
+      "Rust Unlinked - a Journey Through `rustc`, Linkers, Symbols, and Static Libraries",
+    sessionLanguage: "English",
+    elevatorPitch:
+      "Have you ever been curious about how the compiler, linker, and OS work to run your Rust programs? In this talk, Shriram will share his learnings on rustc, what goes inside a linker, what’s in the object files, what’s LTO, why rust prefers static linking, and are there ways to do dynamic linking?",
+    speaker: [Shriram_Balaji],
+    pagePath: `/lineup/${session10A.id}`,
+    ...session10A,
+  },
+  {
+    title:
+      "日本全国・都市3D化プロジェクト「PLATEAU」とデータ変換OSS「PLATEAU GIS Converter」の公開",
+    sessionLanguage: "日本語",
+    elevatorPitch:
+      "国土交通省主導の「PLATEAU」は日本全国、全ての都市を3Dデータ化する大規模プロジェクトです。このビッグデータを様々なデータ形式に高速変換するため、Rustで開発した「PLATEAU GIS Converter」をOSSとして公開しました。国家プロジェクトでありながらOSSとして公開することで、データの利活用促進と技術の透明性を確保しています。本トークではプロジェクトの概要や、Rustの高性能性と安全性が大規模な地理空間データ処理にいかに適しているかを検証したその過程などを紹介します。",
+    speaker: [Satoru_Nishio],
+    pagePath: `/lineup/${session10B.id}`,
+    ...session10B,
+  },
+  {
+    title: "クロージング",
+    sessionLanguage: "日本語",
     elevatorPitch: "次回またお会いしましょう！",
     speaker: [dorayakikun],
-    description: "",
-    ...endingBase,
+    ...closing,
   },
 ];

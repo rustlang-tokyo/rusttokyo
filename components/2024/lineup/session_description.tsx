@@ -1,6 +1,7 @@
 import type { SelectedSession } from "@/constants/2024/lineup/context";
 import type { SpeakerInfo } from "@/constants/2024/lineup/speaker";
 import type { SessionListPageTexts } from "@/constants/2024/lineup/text";
+import * as track from "@/constants/2024/lineup/track";
 import {
   Badge,
   Box,
@@ -17,15 +18,12 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import dynamic from "next/dynamic";
 import { FaClock, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdPlace } from "react-icons/md";
+import { SiQiita } from "react-icons/si";
 import { TwitterShareButton } from "react-share";
 import { PresentationMaterials } from "./materials";
-
-const ReactPlayer = dynamic(() => import("react-player/youtube"), {
-  ssr: false,
-});
 
 export function SessionDescription(props: {
   isPc: boolean;
@@ -45,10 +43,23 @@ export function SessionDescription(props: {
   const headlineFontSize = props.isPc ? "lg" : "md";
 
   return (
-    <Box borderWidth={1} p={containerPad} mb={2}>
+    <Box
+      borderWidth={track.borderWidth(props.session.track)}
+      borderColor={track.borderColor(props.session.track)}
+      p={containerPad}
+      mb={2}
+    >
       <Box pb={8}>
         <Heading size={headlineFontSize}>{props.session.title}</Heading>
         <Wrap pt={2} spacing={props.isPc ? 3 : 1}>
+          <WrapItem>
+            <HStack color={track.color(props.session.track)}>
+              <Icon as={MdPlace} />
+              <Text fontSize="sm">
+                {props.textSource.track} {props.session.track}
+              </Text>
+            </HStack>
+          </WrapItem>
           <WrapItem>
             <HStack>
               <Icon as={FaClock} color={"white"} />
@@ -88,21 +99,13 @@ export function SessionDescription(props: {
         </Box>
       )}
 
-      {props.session.youtube && (
-        <Box pb={8}>
-          <Center>
-            <ReactPlayer url={props.session.youtube?.url} controls pip />
-          </Center>
-        </Box>
-      )}
-
       <VStack pb={8}>
         <Heading as={"h3"} fontSize="md">
           {props.textSource.snsSharing}
         </Heading>
         {/* translate はよくわからんけど必須フィールドになっている。。。 */}
         <TwitterShareButton
-          title={`${props.session.title} by ${props.session.speaker[0].name} | Rust Tokyo 2024`}
+          title={`${props.session.title} by ${props.session.speaker.at(0)?.name ?? ""} | Rust Tokyo 2024`}
           url={`https://rust.tokyo${props.session.pagePath}`}
           translate={undefined}
         >
@@ -141,7 +144,7 @@ export function SessionDescription(props: {
                               fontSize="sm"
                               isExternal
                             >
-                              <Icon as={FaXTwitter} /> {speaker.twitterAccount}
+                              <Icon as={FaXTwitter} /> @{speaker.twitterAccount}
                             </Link>
                           )}
                         </WrapItem>
@@ -153,6 +156,17 @@ export function SessionDescription(props: {
                               isExternal
                             >
                               <Icon as={FaGithub} /> {speaker.githubAccount}
+                            </Link>
+                          )}
+                        </WrapItem>
+                        <WrapItem>
+                          {speaker.qiitaAccount && (
+                            <Link
+                              href={`https://qiita.com/${speaker.qiitaAccount}`}
+                              fontSize="sm"
+                              isExternal
+                            >
+                              <Icon as={SiQiita} /> @{speaker.qiitaAccount}
                             </Link>
                           )}
                         </WrapItem>
