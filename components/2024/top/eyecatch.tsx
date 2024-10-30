@@ -1,11 +1,5 @@
 import type { EnTopTextList, JaTopTextList } from "@/constants/2024/top/texts";
-import {
-  Box,
-  Center,
-  Container,
-  Img,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Center, Container, Img, Text } from "@chakra-ui/react";
 import { BiCalendarPlus } from "react-icons/bi";
 import { RiTicket2Line } from "react-icons/ri";
 import { LinkButton } from "./link_button";
