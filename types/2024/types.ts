@@ -22,6 +22,7 @@ export type BronzeSponsor = {
 
 export type VenueSponsor = {
   name: string;
+  description: string;
   logoImagePath: string;
   url: string;
 };
