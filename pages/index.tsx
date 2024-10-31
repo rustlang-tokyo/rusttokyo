@@ -15,7 +15,6 @@ import {
   venueSponsors,
 } from "@/constants/2024/sponsors/sponsors";
 import { topI18nTexts } from "@/constants/2024/top/texts";
-import { Text } from "@chakra-ui/react";
 import { Box, Center, Container, Heading, VStack } from "@chakra-ui/react";
 import useMedia from "use-media";
 
