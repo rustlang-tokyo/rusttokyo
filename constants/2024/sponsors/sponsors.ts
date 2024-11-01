@@ -149,7 +149,7 @@ export const venueSponsors: VenueSponsorList = {
       description:
         "1995年以来「すべての人にインターネット」をコーポレートキャッチに、インターネットの便利さ、楽しさ、可能性を、多くの方に届けたいという強い想いのもと、インターネット関連の様々なサービスを提供しています。\n" +
         "また、急激な発展を遂げるAIに対し「AIで未来を創るNo.1企業グループ」を掲げ、「時間とコストの節約」「既存サービスの質向上」「AI産業への新サービス提供」を軸とした取り組みを進めています。",
-      logoImagePath: "/static/2024/sponsors/GMO_IG_logo_2022_08_rgb.ai",
+      logoImagePath: "/static/2024/sponsors/gmo.png",
       url: "https://www.gmo.jp/ ",
     },
   ],
