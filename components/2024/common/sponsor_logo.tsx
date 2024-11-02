@@ -4,6 +4,7 @@ export function SponsorLogo(props: {
   size: string;
   url: string;
   logoImagePath: string;
+  imageRatio?: string;
   alt: string;
   padding: number;
   inverse?: boolean;
@@ -19,12 +20,11 @@ export function SponsorLogo(props: {
         >
           <Image
             src={props.logoImagePath}
-            width={"100%"}
-            height={"100%"}
+            width={props.imageRatio ?? "100%"}
+            height={props.imageRatio ?? "100%"}
             paddingLeft={props.padding}
             paddingRight={props.padding}
             objectFit={"contain"}
-            borderRadius={"full"}
             alt={props.alt}
           />
         </Box>

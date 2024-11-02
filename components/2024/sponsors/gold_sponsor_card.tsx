@@ -10,6 +10,7 @@ export function GoldSponsorCard(props: { item: GoldSponsor; isPc: boolean }) {
           size={"300px"}
           url={props.item.url}
           logoImagePath={props.item.logoImagePath}
+          imageRatio={props.item.imageRatio}
           alt={props.item.name}
           padding={8}
         />

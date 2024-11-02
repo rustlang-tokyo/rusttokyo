@@ -3,12 +3,14 @@ export type GoldSponsor = {
   name: string;
   description: string;
   logoImagePath: string;
+  imageRatio?: string;
   url: string;
 };
 
 export type SilverSponsor = {
   name: string;
   logoImagePath: string;
+  imageRatio?: string;
   url: string;
   // NOTE(tkat0): workaround for yumemi-inc.
   inverse?: boolean;
@@ -17,6 +19,7 @@ export type SilverSponsor = {
 export type BronzeSponsor = {
   name: string;
   logoImagePath: string;
+  imageRatio?: string;
   url: string;
 };
 
@@ -24,6 +27,7 @@ export type VenueSponsor = {
   name: string;
   description: string;
   logoImagePath: string;
+  imageRatio?: string;
   url: string;
 };
 

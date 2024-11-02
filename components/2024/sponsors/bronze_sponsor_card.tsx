@@ -12,6 +12,7 @@ export function BronzeSponsorCard(props: {
         size={"140px"}
         url={props.item.url}
         logoImagePath={props.item.logoImagePath}
+        imageRatio={props.item.imageRatio}
         alt={props.item.name}
         padding={2}
       />
