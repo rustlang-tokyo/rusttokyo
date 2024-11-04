@@ -149,6 +149,12 @@ export const sponsors: JobBoardSponsorList = {
       url: "https://www.j-ij.com/ja/recruit",
     },
     // venue sponsors
+    {
+      name: "GMOインターネットグループ",
+      imgSrc: "/static/2024/sponsors/04@3x.png",
+      description:
+        "",
+      url: "",
     },
   ],
   en: [], // Copied from ja later
