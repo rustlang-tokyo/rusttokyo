@@ -3,6 +3,7 @@ import {
   cocPagePath,
   lineupPagePath,
   topPagePath,
+  sponsorPagePath,
 } from "@/constants/2024/header/navigation";
 import {
   Box,
@@ -49,14 +50,14 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                   >
                     LINE UP & SCHEDULE
                   </Link>
-                  {/*<Link
+                  <Link
                     p={2}
                     href={sponsorPagePath.ja}
                     fontSize={"sm"}
                     fontWeight={700}
                   >
                     SPONSORS
-                </Link>*/}
+                </Link>
                   {/*<Link
                     p={2}
                     href={jobboardPagePath.ja}
@@ -158,7 +159,7 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                   LINE UP & SCHEDULE
                 </Link>
               </Box>
-              {/*<Box>
+              <Box>
                 <Link
                   href={sponsorPagePath.ja}
                   fontSize={"md"}
@@ -166,7 +167,7 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                 >
                   SPONSORS
                 </Link>
-              </Box>*/}
+              </Box>
               {/*<Box>
                 <Link
                   href={jobboardPagePath.ja}
