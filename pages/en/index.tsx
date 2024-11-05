@@ -1,4 +1,5 @@
 import { Meta } from "@/components/2024/common/meta";
+import { SponsorList } from "@/components/2024/sponsors/sponsor_list";
 import { Footer } from "@/components/2024/top/en/footer";
 import { Header } from "@/components/2024/top/en/header";
 import { Location } from "@/components/2024/top/en/location";
@@ -7,8 +8,8 @@ import { Organizers } from "@/components/2024/top/organizers";
 import { Staff } from "@/components/2024/top/staff";
 import { headlines } from "@/constants/2024/css/css";
 import { topPagePath } from "@/constants/2024/header/navigation";
+import { bronzeSponsors, goldSponsors, silverSponsors, venueSponsors } from "@/constants/2024/sponsors/sponsors";
 import { topI18nTexts } from "@/constants/2024/top/texts";
-import { Text } from "@chakra-ui/react";
 import { Box, Center, Container, Heading, VStack } from "@chakra-ui/react";
 import useMedia from "use-media";
 
@@ -36,15 +37,14 @@ export default function index() {
                 SPONSORS
               </Heading>
 
-              <Text fontSize="2xl">COMING SOON</Text>
-              {/*<SponsorList
+              <SponsorList
                 goldSponsors={goldSponsors.en}
                 silverSponsors={silverSponsors.en}
                 bronzeSponsors={bronzeSponsors.en}
                 venueSponsors={venueSponsors.en}
                 isPc={isPc}
                 textSource={topI18nTexts.en}
-              />*/}
+              />
             </VStack>
           </Center>
         </Container>

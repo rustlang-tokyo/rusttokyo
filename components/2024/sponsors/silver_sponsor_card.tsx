@@ -12,6 +12,7 @@ export function SilverSponsorCard(props: {
         size={"200px"}
         url={props.item.url}
         logoImagePath={props.item.logoImagePath}
+        imageRatio={props.item.imageRatio}
         alt={props.item.name}
         padding={3}
         inverse={props.item.inverse}

@@ -24,6 +24,22 @@ export function SponsorList(props: {
 
   return (
     <>
+      <Heading as="h3" size="md" pt={8}>
+        {props.textSource.venueSponsor}
+      </Heading>
+
+      <Wrap spacing={bSpacing} justify="center">
+        {props.venueSponsors.map((venueSponsor: VenueSponsor) => {
+          return (
+            <VenueSponsorCard
+              key={venueSponsor.name}
+              item={venueSponsor}
+              isPc={props.isPc}
+            />
+          );
+        })}
+      </Wrap>
+
       <Heading as="h3" size="md" mt={0}>
         {props.textSource.goldSponsor}
       </Heading>
@@ -66,22 +82,6 @@ export function SponsorList(props: {
             <BronzeSponsorCard
               key={bronzeSponsor.name}
               item={bronzeSponsor}
-              isPc={props.isPc}
-            />
-          );
-        })}
-      </Wrap>
-
-      <Heading as="h3" size="md" pt={8}>
-        {props.textSource.venueSponsor}
-      </Heading>
-
-      <Wrap spacing={bSpacing} justify="center">
-        {props.venueSponsors.map((venueSponsor: VenueSponsor) => {
-          return (
-            <VenueSponsorCard
-              key={venueSponsor.name}
-              item={venueSponsor}
               isPc={props.isPc}
             />
           );
