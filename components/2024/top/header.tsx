@@ -4,6 +4,7 @@ import {
   lineupPagePath,
   topPagePath,
   sponsorPagePath,
+  jobboardPagePath,
 } from "@/constants/2024/header/navigation";
 import {
   Box,
@@ -57,15 +58,15 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                     fontWeight={700}
                   >
                     SPONSORS
-                </Link>
-                  {/*<Link
+                  </Link>
+                  <Link
                     p={2}
                     href={jobboardPagePath.ja}
                     fontSize={"sm"}
                     fontWeight={700}
                   >
                     JOBBOARD
-                  </Link>*/}
+                  </Link>
                   <Link
                     pl={2}
                     pr={4}
@@ -168,7 +169,7 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                   SPONSORS
                 </Link>
               </Box>
-              {/*<Box>
+              <Box>
                 <Link
                   href={jobboardPagePath.ja}
                   fontSize={"md"}
@@ -176,7 +177,7 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                 >
                   JOBBOARD
                 </Link>
-              </Box>*/}
+              </Box>
               <Box>
                 <Link href={cocPagePath.ja} fontSize={"md"} fontWeight={700}>
                   CODE OF CONDUCT
