@@ -18,7 +18,7 @@ export const sponsors: JobBoardSponsorList = {
     // gold sponsors
     {
       name: "株式会社KICONIA WORKS",
-      imgSrc: "/static/2024/sponsors/kiconia_logo_typ2.png",
+      imgSrc: "static/2024/sponsors/kiconia_logo_typ2.png",
       description:
         "KICONIA WORKSは、機械学習、数理最適化、アプリケーション開発などを通じて、" +
         "さまざまな業界の大手企業から中小企業まで、幅広い企業の課題解決をサポートする会社です。" +
@@ -33,7 +33,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "Fairy Devices株式会社",
-      imgSrc: "/static/2024/sponsors/fairydevices.png",
+      imgSrc: "static/2024/sponsors/fairydevices.png",
       description:
         "Fairy Devicesでは、自社開発の首掛け型ウェアラブルデバイスTHINKLETと音声AIプラットフォーム" +
         "mimiによって、現場DXサービスを提供しています。私たちはデバイスと音声処理技術をもとに、" +
@@ -48,7 +48,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "株式会社一休",
-      imgSrc: "/static/2024/sponsors/ikyu_com_1.png",
+      imgSrc: "static/2024/sponsors/ikyu_com_1.png",
       description:
         "【テクノロジーを活用し上質な体験を提供する】\n" +
         "一休は、上質な宿やレストランなどのWeb予約サービス「一休.com」を提供しています。" +
@@ -62,7 +62,7 @@ export const sponsors: JobBoardSponsorList = {
 
     {
       name: "ユニークビジョン株式会社",
-      imgSrc: "/static/2024/sponsors/UNIQUEVISION_logo_4to3.png",
+      imgSrc: "static/2024/sponsors/UNIQUEVISION_logo_4to3.png",
       description:
         "【バズったあのキャンペーンもユニークビジョンのプロダクトを使っているかも!?】\n" +
         "ユニークビジョンはSNSマーケティングツール「Belugaシリーズ」を開発・提供。" +
@@ -77,7 +77,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "株式会社アークエッジ・スペース",
-      imgSrc: "/static/2024/sponsors/ArkEdgeSpace_BRANDLOGO-RGB-Ver001.png",
+      imgSrc: "static/2024/sponsors/ArkEdgeSpace_BRANDLOGO-RGB-Ver001.png",
       description:
         "アークエッジ・スペースは多様なミッションへの挑戦を通じ" +
         "小型衛星を用いたサービス・宇宙利用価値を創出し続ける" +
@@ -90,7 +90,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "AGC株式会社",
-      imgSrc: "/static/2024/sponsors/AGC_Group Brand Logo_Emblem Type_png.png",
+      imgSrc: "static/2024/sponsors/AGC_GroupBrandLogo_EmblemType_png.png",
       description:
         "御社からのメッセージ：\n" +
         "AGCグループは、祖業のガラス事業を起点として、化学品、セラミックス、電子部材と、" +
@@ -105,7 +105,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "株式会社NATTOSYSTEM",
-      imgSrc: "/static/2024/sponsors/NATTOSYSTEM_logo.svg",
+      imgSrc: "static/2024/sponsors/NATTOSYSTEM_logo.svg",
       description:
         "弊社は、世界中で利用されている開発ツール「JetBrains」の数少ない公式代理店として、" +
         "提案販売から導入サポートまでを担当しています。" +
@@ -117,7 +117,7 @@ export const sponsors: JobBoardSponsorList = {
     // silver sponsors
     {
       name: "株式会社LabBase",
-      imgSrc: "/static/2024/sponsors/LabBase_corp_300.png",
+      imgSrc: "static/2024/sponsors/LabBase_corp_200.png",
       description:
         "我々は、研究者の可能性を最大化させる" +
         "「研究エンパワープラットフォーム」の創造を目指しています。" +
@@ -131,7 +131,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "BLUEPRINT Holdings, Limited",
-      imgSrc: "/static/2024/sponsors/bp_logo.png",
+      imgSrc: "static/2024/sponsors/bp_logo.png",
       description:
         "クリプト特化の自己勘定型ヘッジファンドで、トレーディングシステムをRustで開発しませんか？\n\n" +
         "BLUEPRINTではメイン事業である「SaaS特化のスタートアップファクトリー事業」を通じて、" +
@@ -145,7 +145,7 @@ export const sponsors: JobBoardSponsorList = {
     },
     {
       name: "株式会社Jij",
-      imgSrc: "/static/2024/sponsors/jii.png",
+      imgSrc: "static/2024/sponsors/jij.png",
       description:
         "Jijは量子技術と数理最適化技術に強みを持つグローバルスタートアップです。" +
         "私たちは、複雑な最適化問題に対して独自のアルゴリズムと先進的なソフトウェアを開発し、" +
