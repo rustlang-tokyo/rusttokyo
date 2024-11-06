@@ -7,7 +7,30 @@ type JobBoardSponsorList = {
 
 export const sponsors: JobBoardSponsorList = {
   ja: [
+    // venue sponsors
+    // {
+    //   name: "GMOインターネットグループ",
+    //   imgSrc: "/static/2024/sponsors/04@3x.png",
+    //   description:
+    //     "",
+    //   url: "",
+    // },
     // gold sponsors
+    {
+      name: "株式会社KICONIA WORKS",
+      imgSrc: "/static/2024/sponsors/kiconia_logo_typ2.png",
+      description:
+        "KICONIA WORKSは、機械学習、数理最適化、アプリケーション開発などを通じて、" +
+        "さまざまな業界の大手企業から中小企業まで、幅広い企業の課題解決をサポートする会社です。" +
+        "少数精鋭のチームで迅速かつ高品質なサービスを提供し、年間40〜50件のプロジェクトを手がけています。" +
+        "また、働く時間や環境に縛られず、新しいサービスの開発や研究開発を通じて、" +
+        "エンジニアが自己実現できる機会も提供しています。\n" +
+        "当社では、顧客やマーケットのニーズに合わせて、適切な技術や言語を選定しています。" +
+        "その中で、数理最適化の分野や巷ではライブラリの整備されていない分野でのアプリケーション開発では" +
+        "Rustを選択することも多く、難易度の高いプロジェクトに一緒に取り組んでいただける仲間を募集しています。" +
+        "様々な働き方や関係性があると思います。まずは是非フランクにお話しましょう。",
+      url: "https://kiconiaworks.com/contact/",
+    },
     {
       name: "Fairy Devices株式会社",
       imgSrc: "/static/2024/sponsors/fairydevices.png",
@@ -36,21 +59,7 @@ export const sponsors: JobBoardSponsorList = {
         "一休でのプロダクト開発に興味がある方は、ぜひカジュアル面談からお気軽にご応募ください。",
       url: "https://www.ikyu.co.jp/recruit/engineer",
     },
-    {
-      name: "株式会社KICONIA WORKS",
-      imgSrc: "/static/2024/sponsors/kiconia_logo_typ2.png",
-      description:
-        "KICONIA WORKSは、機械学習、数理最適化、アプリケーション開発などを通じて、" +
-        "さまざまな業界の大手企業から中小企業まで、幅広い企業の課題解決をサポートする会社です。" +
-        "少数精鋭のチームで迅速かつ高品質なサービスを提供し、年間40〜50件のプロジェクトを手がけています。" +
-        "また、働く時間や環境に縛られず、新しいサービスの開発や研究開発を通じて、" +
-        "エンジニアが自己実現できる機会も提供しています。\n" +
-        "当社では、顧客やマーケットのニーズに合わせて、適切な技術や言語を選定しています。" +
-        "その中で、数理最適化の分野や巷ではライブラリの整備されていない分野でのアプリケーション開発では" +
-        "Rustを選択することも多く、難易度の高いプロジェクトに一緒に取り組んでいただける仲間を募集しています。" +
-        "様々な働き方や関係性があると思います。まずは是非フランクにお話しましょう。",
-      url: "https://kiconiaworks.com/contact/",
-    },
+
     {
       name: "ユニークビジョン株式会社",
       imgSrc: "/static/2024/sponsors/UNIQUEVISION_logo_4to3.png",
@@ -148,14 +157,6 @@ export const sponsors: JobBoardSponsorList = {
         "そんな私たちのビジョンに共感し、共に成長したい方をお待ちしています。",
       url: "https://www.j-ij.com/ja/recruit",
     },
-    // venue sponsors
-    // {
-    //   name: "GMOインターネットグループ",
-    //   imgSrc: "/static/2024/sponsors/04@3x.png",
-    //   description:
-    //     "",
-    //   url: "",
-    // },
   ],
   en: [], // Copied from ja later
 };
