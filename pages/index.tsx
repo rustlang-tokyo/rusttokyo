@@ -9,9 +9,9 @@ import { Staff } from "@/components/2024/top/staff";
 import { headlines } from "@/constants/2024/css/css";
 import { topPagePath } from "@/constants/2024/header/navigation";
 import {
+  bronzeSponsors,
   goldSponsors,
   silverSponsors,
-  bronzeSponsors,
   venueSponsors,
 } from "@/constants/2024/sponsors/sponsors";
 import { topI18nTexts } from "@/constants/2024/top/texts";

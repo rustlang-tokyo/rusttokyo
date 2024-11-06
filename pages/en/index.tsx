@@ -8,7 +8,12 @@ import { Organizers } from "@/components/2024/top/organizers";
 import { Staff } from "@/components/2024/top/staff";
 import { headlines } from "@/constants/2024/css/css";
 import { topPagePath } from "@/constants/2024/header/navigation";
-import { bronzeSponsors, goldSponsors, silverSponsors, venueSponsors } from "@/constants/2024/sponsors/sponsors";
+import {
+  bronzeSponsors,
+  goldSponsors,
+  silverSponsors,
+  venueSponsors,
+} from "@/constants/2024/sponsors/sponsors";
 import { topI18nTexts } from "@/constants/2024/top/texts";
 import { Box, Center, Container, Heading, VStack } from "@chakra-ui/react";
 import useMedia from "use-media";

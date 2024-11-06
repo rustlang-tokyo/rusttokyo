@@ -50,7 +50,8 @@ export const goldSponsors: GoldSponsorList = {
       name: "株式会社アークエッジ・スペース",
       description:
         "アークエッジ・スペースは、小型衛星コンステレーションの企画・設計から量産化、運用、関連するソフトウェア開発まで総合的なソリューション提供を行う宇宙スタートアップ企業です。“衛星を通じて、人々により安全で豊かな未来を”実現することを目指し、今後は地球観測、船舶向け衛星通信（衛星VDES）、IoTデータ収集等に対応した小型衛星コンステレーションの構築を実現するとともに、月面活動にむけた衛星インフラ構築や深宇宙探査など、多様なミッションニーズに対応し、誰でも手が届く宇宙の開発利用を推進しています。",
-      logoImagePath: "/static/2024/sponsors/ArkEdgeSpace_BRANDLOGO-RGB-Ver001.png",
+      logoImagePath:
+        "/static/2024/sponsors/ArkEdgeSpace_BRANDLOGO-RGB-Ver001.png",
       imageRatio: "90%",
       url: "https://arkedgespace.com/",
     },

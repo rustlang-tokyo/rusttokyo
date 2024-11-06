@@ -1,10 +1,10 @@
 import {
   type PagePath,
   cocPagePath,
-  lineupPagePath,
-  topPagePath,
-  sponsorPagePath,
   jobboardPagePath,
+  lineupPagePath,
+  sponsorPagePath,
+  topPagePath,
 } from "@/constants/2024/header/navigation";
 import {
   Box,

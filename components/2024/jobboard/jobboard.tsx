@@ -1,18 +1,16 @@
 import {
   Box,
-  Button,
   Center,
   Container,
   HStack,
   Heading,
-  Icon,
-  Link,
   Text,
   VStack,
   WrapItem,
 } from "@chakra-ui/react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { SponsorLogo } from "../common/sponsor_logo";
+import { LinkButton } from "../top/link_button";
 
 export function JobboardCard(props: {
   name: string;
@@ -48,11 +46,9 @@ export function JobboardCard(props: {
               </Text>
             </Box>
             <Box mt={4}>
-              <Button rightIcon={<FaExternalLinkAlt />}>
-                <Link href={props.url} isExternal>
-                  応募はこちらから
-                </Link>
-              </Button>
+              <LinkButton href={props.url} rightIcon={<FaExternalLinkAlt />}>
+                応募はこちらから
+              </LinkButton>
             </Box>
           </Box>
         </HStack>
@@ -81,12 +77,9 @@ export function JobboardCard(props: {
               <Text fontSize="sm">{props.description}</Text>
             </Box>
             <Box py={2}>
-              <Button width={"100%"}>
-                <Link href={props.url} isExternal>
-                  応募はこちらから
-                  <Icon as={FaExternalLinkAlt} />
-                </Link>
-              </Button>
+              <LinkButton href={props.url} rightIcon={<FaExternalLinkAlt />}>
+                応募はこちらから
+              </LinkButton>
             </Box>
           </Box>
         </VStack>
