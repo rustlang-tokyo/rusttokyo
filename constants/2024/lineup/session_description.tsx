@@ -5,12 +5,20 @@ import {
   session1B,
   session2A,
   session2B,
+  session3A,
+  session3B,
+  session4A,
+  session4B,
   session5A,
   session5B,
   session6A,
   session6B,
   session7A,
   session7B,
+  session8A,
+  session8B,
+  session9A,
+  session9B,
   session10A,
   session10B,
 } from "./context";
@@ -916,6 +924,211 @@ const Session10B = () => {
 
 const Session10B_en = Session10B;
 
+const SponsorSession3A = () => {
+  return (
+    <>
+      <Text pb={4}>
+        昨年、私はRustでOpenAI
+        APIを使用してLLMを使用するCLIアプリケーション(FerriteChatter)を作成しました。
+      </Text>
+      <Text pb={4}>
+        外部APIのクライアントとして動作するアプリケーションの作成時、レスポンスをもとに挙動や実装が変化する事があります。
+      </Text>
+      <Text pb={4}>
+        今回の発表ではOpenAI
+        APIを例に、ビルド時にAPIを叩き、そのレスポンスをもとにEnumと実装をproc_macroで生成した事例を紹介します。
+      </Text>
+      <Text pb={4}>
+        また、そういった実装を行った際に発生するGitHub
+        Actionsの使用上のリスクについても取り上げます。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession3A_en = () => {
+  return (
+    <>
+      <Text pb={4}>
+        Last year, I developed a CLI application called FerriteChatter using
+        Rust to utilize the OpenAI API for leveraging LLMs.
+      </Text>
+      <Text pb={4}>
+        When creating an application that acts as a client for external APIs,
+        its behavior and implementation might change based on the responses
+        received.
+      </Text>
+      <Text pb={4}>
+        In this presentation, I will showcase a case where we used the OpenAI
+        API as an example to execute the API at build time and generated Enums
+        and implementations using proc_macros based on the responses.
+      </Text>
+      <Text pb={4}>
+        Additionally, I will address the risks associated with using GitHub
+        Actions when adopting such an implementation strategy.
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession3B = () => {
+  return (
+    <>
+      <Text pb={4}>
+        ユニークビジョンは、SNS アカウント管理、CRM、SNS
+        キャンペーンなどを通じて、企業と生活者のつながりを提供する SNS
+        マーケティングツール「Beluga シリーズ」を開発・提供している会社です。
+      </Text>
+      <Text pb={4}>
+        このセッションでは、「仕様変更のたびにテストが壊れる」「外部APIの単体テストが書けない」「テストデータの作成・メンテナンスが煩雑」など、開発現場でよく直面するテストにまつわる課題に対して、実務でRustを7年使ってきた経験から得られた実践的な解決策をご紹介します。
+      </Text>
+      <Text pb={4}>・壊れやすいテストへの対応</Text>
+      <Text pb={4}>
+        一度書いたテストは仕様変更により壊れやすく、何度も書き直しが必要になります。
+        プロダクトの成長に伴い、テストの修正に費やす時間は増加の一途をたどります。
+        壊れやすいテストを改善する方法は様々ありますが、本セッションではDBのテーブル変更に強いテストの実装方法についてお話します。
+      </Text>
+      <Text pb={4}>・テストしにくい外部APIへの対応</Text>
+      <Text pb={4}>
+        外部で提供されているAPIは、正常系だけでなくエラー系のテストも実施したいところです。
+        しかし、実際のAPIでは自由にエラーを発生させることができません。
+        ユニークビジョンではSNSのAPIを利用しており、その経験を活かしたモックを使用したテスト手法をご紹介します。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession4A = () => {
+  return (
+    <>
+      <Text pb={4}>
+        2022年からRust.Tokyoをスポンサーし続けて3回目になりました。
+      </Text>
+      <Text pb={4}>
+        2022年時点ではRust採用の動機と3年間の歩みについてお話しましたが、そこからさらに2年間、引き続きRustは開発チームにおいて多く利用しています。
+      </Text>
+      <Text pb={4}>
+        この2年間において、実施した新しい取り組みやそこで見えてきた課題や得られた知見についてお話したいと思います。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession4B = () => {
+  return (
+    <>
+      <Text pb={4}>
+        発表では、VDESの技術的背景とITU-RM.2092-1の要件について説明します。
+      </Text>
+      <Text pb={4}>
+        その後、ターボ符号化と復号化の実装プロセスを紹介し、Rustの特徴がどのように開発をサポートしたかを具体例を交えてお話しします。
+      </Text>
+      <Text pb={4}>
+        最後に、Rustを学ぶ過程で直面した課題や困難についても触れます。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession4B_en = () => {
+  return (
+    <>
+      <Text pb={4}>
+        The presentation will cover the technical background of VDES and the
+        requirements outlined in ITU-R M.2092-1.
+      </Text>
+      <Text pb={4}>
+        I will then walk through the implementation process of turbo encoding
+        and decoding, highlighting how Rust's features supported development in
+        specific ways.
+      </Text>
+      <Text pb={4}>
+        Finally, I will discuss the challenges and difficulties I encountered
+        while learning Rust.
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession8A = () => {
+  return (
+    <>
+      <Text pb={4}>
+        株式会社一休ではサービス全体で1,500万人以上の会員を抱えているWeb予約サービス「一休.com」を運営しています。
+      </Text>
+      <Text pb={4}>
+        サービスは複数の予約サイトからなり、そのうちの1つにレストランのWeb予約ができる「一休.comレストラン」があります。
+      </Text>
+      <Text pb={4}>
+        この一休.comレストランでは、バックエンドシステムのRustへの移行が進んでいます。
+      </Text>
+      <Text pb={4}>
+        移行にあたっては、Rustの表現力の高い型システムの活用や高速／省リソースなバックエンドの運用を狙っています。
+      </Text>
+      <Text pb={4}>
+        また、今後長きに渡ってサービスを支えるバックエンドシステムとすべく、アーキテクチャや個別のモジュールの設計において技術的な考慮もいくつかおこなっています。
+      </Text>
+      <Text pb={4}>
+        このセッションでは、このような一休.comレストランにおけるRust移行の実際や工夫などについて紹介します。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession8B = () => {
+  return (
+    <>
+      <UnorderedList>
+        <ListItem>
+          分散Traceや、Opentelemetry など、Observability
+          に関する方法とRustで書かれたWeb アプリケーションの開発・運用について。
+        </ListItem>
+        <ListItem>他、開発・運用にあたって苦労した（している）点など</ListItem>
+      </UnorderedList>
+    </>
+  );
+};
+
+const SponsorSession9A = () => {
+  return (
+    <>
+      <Text pb={4}>
+        KICONIA
+        WORKS内では、以下のに複数の案件・複数の領域においてRustの活用を進めています。
+      </Text>
+      <UnorderedList>
+        <ListItem>数理最適化を用いた自動設計アプリケーション</ListItem>
+        <ListItem>自社開発アプリの機械学習エンジン</ListItem>
+        <ListItem>Pythonで開発している解析エンジンの部分高速化</ListItem>
+        <ListItem>iPhoneアプリ上での動画像処理エンジン</ListItem>
+      </UnorderedList>
+      <Text pb={4}>
+        今回は「iPhoneアプリ上での動画像処理エンジン」を中心に受託研究開発におけるRustの導入経緯や対案に対しての優位性を共有していきます。
+      </Text>
+      <Text pb={4}>
+        また、Rustを採用した動画像処理開発の詳細や240fpsを出すために必要であった工夫やツールなどを交えて、結果論的にRustでの開発体験が良かったという共有をしていきます。
+      </Text>
+    </>
+  );
+};
+
+const SponsorSession9B = () => {
+  return (
+    <>
+      <Text pb={4}>
+        ソフトウェア開発者は、コードに向き合うだけでなく、さまざまなタスクをこなすことが求められます。
+      </Text>
+      <Text pb={4}>
+        調査によると、開発者の業務時間の半分ほどがコーディングに費やされると言われており、コード作業を全方位でサポートするツールが不可欠です。
+      </Text>
+      <Text pb={4}>
+        このセッションでは、Rust
+        開発者向けの万能ツール「RustRover」にスポットを当て、コードベースの探索、新しいコードの記述、デバッグ、依存関係の管理など、日々の開発業務にどのように役立つかを紹介します。
+      </Text>
+    </>
+  );
+};
+
 const lineupDatabase = [
   {
     id: session1A.id,
@@ -936,6 +1149,26 @@ const lineupDatabase = [
     id: session2B.id,
     ja: Session2B,
     en: Session2B_en,
+  },
+  {
+    id: session3A.id,
+    ja: SponsorSession3A,
+    en: SponsorSession3A_en,
+  },
+  {
+    id: session3B.id,
+    ja: SponsorSession3B,
+    en: SponsorSession3B,
+  },
+  {
+    id: session4A.id,
+    ja: SponsorSession4A,
+    en: SponsorSession4A,
+  },
+  {
+    id: session4B.id,
+    ja: SponsorSession4B,
+    en: SponsorSession4B_en,
   },
   {
     id: session5A.id,
@@ -966,6 +1199,26 @@ const lineupDatabase = [
     id: session7B.id,
     ja: Session7B,
     en: Session7B_en,
+  },
+  {
+    id: session8A.id,
+    ja: SponsorSession8A,
+    en: SponsorSession8A,
+  },
+  {
+    id: session8B.id,
+    ja: SponsorSession8B,
+    en: SponsorSession8B,
+  },
+  {
+    id: session9A.id,
+    ja: SponsorSession9A,
+    en: SponsorSession9A,
+  },
+  {
+    id: session9B.id,
+    ja: SponsorSession9B,
+    en: SponsorSession9B,
   },
   {
     id: session10A.id,

@@ -110,6 +110,7 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
 今回の発表ではOpenAI APIを例に、ビルド時にAPIを叩き、そのレスポンスをもとにEnumと実装をproc_macroで生成した事例を紹介します。
 また、そういった実装を行った際に発生するGitHub Actionsの使用上のリスクについても取り上げます。`,
     speaker: [Shiseki_Reo],
+    pagePath: `/lineup/${session3A.id}`,
     ...session3A,
   },
   {
@@ -122,6 +123,7 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
 
 など、開発現場でよく直面するテストにまつわる課題に対して、実務でRustを7年使ってきた経験から得られた実践的な解決策をご紹介します。`,
     speaker: [Aoyagi_Kohei],
+    pagePath: `/lineup/${session3B.id}`,
     ...session3B,
   },
   {
@@ -130,14 +132,16 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
     elevatorPitch:
       "2022年からRust.Tokyoをスポンサーし続けて3回目になりました。2022年時点ではRust採用の動機と3年間の歩みについてお話しましたが、そこからさらに2年間、引き続きRustは開発チームにおいて多く利用しています。この2年間において、実施した新しい取り組みやそこで見えてきた課題や得られた知見についてお話したいと思います。",
     speaker: [FairyDevices],
+    pagePath: `/lineup/${session4A.id}`,
     ...session4A,
   },
   {
     title: "VDESターボエンコーダ/デコーダの実装を通じてRustを学ぶ",
-    sessionLanguage: "日本語",
+    sessionLanguage: "English",
     elevatorPitch:
       "発表では、VDESの技術的背景とITU-R M.2092-1の要件について説明します。その後、ターボ符号化と復号化の実装プロセスを紹介し、Rustの特徴がどのように開発をサポートしたかを具体例を交えてお話しします。最後に、Rustを学ぶ過程で直面した課題や困難についても触れます。",
     speaker: [Sergi_Granell],
+    pagePath: `/lineup/${session4B.id}`,
     ...session4B,
   },
   {
@@ -209,6 +213,7 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
 
 このセッションでは、このような一休.comレストランにおけるRust移行の実際や工夫などについて紹介します。`,
     speaker: [Kohei_Yamamoto],
+    pagePath: `/lineup/${session8A.id}`,
     ...session8A,
   },
   {
@@ -218,6 +223,7 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
     elevatorPitch:
       "素材メーカーのソフトウェア内製開発部隊が、開発言語にRust 採用した後の２年間で、持続的な開発・運用のために行った、開発/運用体験向上のための試行錯誤や、過去（と今）の苦労談、学びなどを紹介します。",
     speaker: [Takuya_Moriyama],
+    pagePath: `/lineup/${session8B.id}`,
     ...session8B,
   },
   {
@@ -228,14 +234,16 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
 ・どのように高速化を進めているのか？
 という観点をを通じて、画像処理 + iPhoneアプリにおけるRustの活用事例を共有します。`,
     speaker: [Yuta_Hinokuma],
+    pagePath: `/lineup/${session9A.id}`,
     ...session9A,
   },
   {
     title: "Rust 開発を支えるツール – RustRover で日々の作業を効率化",
-    sessionLanguage: "日本語",
+    sessionLanguage: "English",
     elevatorPitch:
       "ソフトウェア開発者は、コードに向き合うだけでなく、さまざまなタスクをこなすことが求められます。調査によると、開発者の業務時間の半分ほどがコーディングに費やされると言われており、コード作業を全方位でサポートするツールが不可欠です。このセッションでは、Rust 開発者向けの万能ツール「RustRover」にスポットを当て、コードベースの探索、新しいコードの記述、デバッグ、依存関係の管理など、日々の開発業務にどのように役立つかを紹介します。",
     speaker: [Vitaly_Bragilevsky],
+    pagePath: `/lineup/${session9B.id}`,
     ...session9B,
   },
   {
