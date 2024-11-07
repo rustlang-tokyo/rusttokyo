@@ -126,12 +126,20 @@ export function SessionDescription(props: {
               <Box key={speaker.name} pt={4}>
                 <VStack spacing={4}>
                   <VStack spacing={2}>
-                    <Image
-                      src={speaker.avatarSrc}
-                      borderRadius="full"
+                    <Box
+                      bgColor="white"
                       boxSize="120px"
-                      alt={speaker.name}
-                    />
+                      borderRadius="full"
+                      overflow="hidden"
+                    >
+                      <Image
+                        src={speaker.avatarSrc}
+                        objectFit={speaker.objectFit ?? "cover"}
+                        width="100%"
+                        height="100%"
+                        alt={speaker.name}
+                      />
+                    </Box>
                     <Text fontSize="lg" fontWeight="500">
                       {speaker.name}
                     </Text>

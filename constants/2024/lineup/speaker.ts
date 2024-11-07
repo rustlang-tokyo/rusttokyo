@@ -1,3 +1,5 @@
+import type { SystemProps } from "@chakra-ui/react";
+
 export type SpeakerInfo = {
   name: string;
   profile: string;
@@ -7,6 +9,7 @@ export type SpeakerInfo = {
   avatarSrc: string;
   // padding for avatar icon.
   padding?: number;
+  objectFit?: SystemProps["objectFit"];
 };
 
 const organiserAvatarBase = "/static/2024/organizers/";
@@ -194,6 +197,7 @@ DXサービスを提供しています。私たちはデバイスと音声処理
 しない情報をデータ化し、機械知能が理解可能にすること、その結果として人類のあらゆる知識を叡
 智として流通可能にすることを目指しています。`,
   avatarSrc: `${avatarBaseSrc}fairy_devices.png`,
+  objectFit: "contain",
 } satisfies SpeakerInfo;
 
 export const FairyDevices_en = FairyDevices;

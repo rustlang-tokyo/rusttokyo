@@ -42,15 +42,31 @@ function SessionCard(props: {
           {props.session.speaker.map((speaker: SpeakerInfo) => (
             <WrapItem key={speaker.name}>
               <HStack>
-                <Avatar
-                  // NOTE: workaround when image aspect ratio is not 1.
-                  className={speaker?.padding ? styles.img : undefined}
-                  name={speaker.name}
-                  src={speaker.avatarSrc}
-                  size="sm"
-                  bg="white"
-                  padding={speaker.padding || 0}
-                />
+                {speaker.objectFit != null ? (
+                  <Avatar
+                    // NOTE: workaround when image aspect ratio is not 1.
+                    className={speaker?.padding ? styles.img : undefined}
+                    size="sm"
+                    name={speaker.name}
+                    bgImage={speaker.avatarSrc}
+                    bgPosition="center"
+                    bgSize="contain"
+                    bgRepeat="no-repeat"
+                    bgColor="white"
+                    padding={speaker.padding || 0}
+                  />
+                ) : (
+                  <Avatar
+                    // NOTE: workaround when image aspect ratio is not 1.
+                    className={speaker?.padding ? styles.img : undefined}
+                    name={speaker.name}
+                    src={speaker.avatarSrc}
+                    size="sm"
+                    bg="white"
+                    padding={speaker.padding || 0}
+                  />
+                )}
+
                 <Text fontSize="sm">{speaker.name}</Text>
               </HStack>
             </WrapItem>
