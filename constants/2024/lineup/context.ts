@@ -108,7 +108,7 @@ export const session4A: SelectedSessionBase = {
   endAt: "13:30",
   order: 7,
   sessionType: "Sponsor",
-  renderDesc: false,
+  renderDesc: true,
 };
 
 export const session4B: SelectedSessionBase = {
@@ -119,7 +119,7 @@ export const session4B: SelectedSessionBase = {
   endAt: "13:30",
   order: 8,
   sessionType: "Sponsor",
-  renderDesc: false,
+  renderDesc: true,
 };
 
 export const session5A: SelectedSessionBase = {
