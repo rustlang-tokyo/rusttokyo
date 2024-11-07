@@ -118,8 +118,8 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
   {
     title: "COMING SOON",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch: `発表では、VDESの技術的背景とITU-R M.2092-1の要件について説明します。その後、ターボ符号化と復号化の実装プロセスを紹介し、Rustの特徴がどのように開発をサポートしたかを具体例を交えてお話しします。最後に、Rustを学ぶ過程で直面した課題や困難についても触れます。`,
+    speaker: [Sergi_Granell],
     ...session4B,
   },
   {

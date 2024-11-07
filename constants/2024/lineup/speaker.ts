@@ -163,3 +163,106 @@ Python / Rust / GIS / 点群 / 3D Tiles / AWS / WebGL / PLATEAU ADVOCATE / Cesiu
 };
 
 export const Satoru_Nishio_en = Satoru_Nishio;
+
+export const Shiseki_Reo = {
+  name: "紫関 麗王",
+  profile: "GMOペパボ セキュリティ対策室, SECCON CTF Administrator",
+  twitterAccount: "n01e0",
+  avatarSrc: `${avatarBaseSrc}shiseki_reo.jpg`,
+} satisfies SpeakerInfo;
+
+export const Shiseki_Reo_en = {
+  ...Shiseki_Reo,
+  name: "Shiseki Reo",
+} satisfies SpeakerInfo;
+
+export const Aoyagi_Kohei = {
+  name: "青柳 康平",
+  profile:
+    "東京電機大学大学院数学専攻修了。フューチャーアーキテクトでコンサルタントを経てR&Dに所属、魔法のｉらんど CTO、フューチャースコープCTOを歴任後、ユニークビジョンの創業に参加し取締役CTOに就任。最新技術を用いてパフォーマンスを追求し、柔軟で拡張性の高い仕組みをつくる。特にDB設計に注目し、将来のデータ量を想定し最適なテーブル設計を行っている。",
+  twitterAccount: "aoyagikouhei",
+  avatarSrc: `${avatarBaseSrc}aoyagi_kohei.png`,
+} satisfies SpeakerInfo;
+
+export const Aoyagi_Kohei_en = Aoyagi_Kohei;
+
+export const FairyDevices = {
+  name: "Fairy Devices株式会社",
+  profile: `自社開発の首掛け型ウェアラブルデバイスTHINKLETと音声AIプラットフォームmimiによって、現場
+DXサービスを提供しています。私たちはデバイスと音声処理技術をもとに、インターネットに存在
+しない情報をデータ化し、機械知能が理解可能にすること、その結果として人類のあらゆる知識を叡
+智として流通可能にすることを目指しています。`,
+  avatarSrc: `${avatarBaseSrc}fairy_devices.png`,
+} satisfies SpeakerInfo;
+
+export const FairyDevices_en = FairyDevices;
+
+export const Sergi_Granell = {
+  name: "Sergi Granell",
+  profile: `低レベルプログラミングとハードウェア設計に情熱を持つエンジニアです。14歳の時にPSP向けにLua言語でアプリをプログラミングし独学で技術を磨きました。その後、CやMIPS
+ASMを学び、テクノロジー、科学、宇宙探査に強い興味を持つようになりました。UPC
+BarcelonaTechで情報工学の修士号を取得し、九州大学での論文では、FPGAでのHalideの実行を加速するための技術を研究しました。Esperanto
+TechnologiesでRISC-Vコア向けのファームウェア開発に携わり、現在はアークエッジ・スペースで小型衛星のファームウェアやSDRの開発を行っています。趣味でゲーム機のプログラミングやリバースエンジニアリングにも取り組んでおり、オープンソースプロジェクトへの貢献を楽しんでいます。`,
+  twitterAccount: "xerpi",
+  githubAccount: "xerpi",
+  avatarSrc: `${avatarBaseSrc}sergi_granell.jpg`,
+} satisfies SpeakerInfo;
+
+export const Sergi_Granell_en = {
+  ...Sergi_Granell,
+  profile: `I am an engineer passionate about low-level programming and hardware
+design. I started programming at the age of 14 by creating
+applications in Lua for the PSP, teaching myself various technologies
+along the way. I later learned C and MIPS ASM, developing a strong
+interest in technology, science, and space exploration. I earned my
+master's degree in Computer Engineering from UPC BarcelonaTech,
+focusing on accelerating Halide execution on FPGAs for my thesis at
+Kyushu University. I worked on firmware development for RISC-V cores
+at Esperanto Technologies and am currently developing firmware and SDR
+for small satellites at ArkEdge Space. In my spare time, I enjoy
+programming and reverse engineering game consoles and contributing to
+open-source projects.`,
+} satisfies SpeakerInfo;
+
+export const Kohei_Yamamoto = {
+  name: "山本 浩平",
+  profile: `株式会社一休に所属するソフトウェアエンジニア。
+2023年からRustなどを用いた一休.comレストランの開発に携わる。そのほか、技術広報として開発者ブログの運用やイベント実務などもおこなう。`,
+  twitterAccount: "kymmt90",
+  githubAccount: "kymmt90",
+  avatarSrc: `${avatarBaseSrc}kohei_yamamoto.jpg`,
+} satisfies SpeakerInfo;
+
+export const Kohei_Yamamoto_en = {
+  ...Kohei_Yamamoto,
+  name: "Kōhei Yamamoto",
+} satisfies SpeakerInfo;
+
+export const Takuya_Moriyama = {
+  name: "Takuya Moriyama",
+  profile:
+    "去年から、素材の会社でソフトウェアエンジニア職を始めて、その時に初めてRust を仕事で触りました。その前はデータサイエンス職などをしておりました。",
+  avatarSrc: `${avatarBaseSrc}takuya_moriyama.jpg`,
+} satisfies SpeakerInfo;
+
+export const Takura_Moriyama_en = Takuya_Moriyama;
+
+export const Yuta_Hinokuma = {
+  name: "日熊 悠太",
+  profile: `学生時代よりプログラミングコンテスト等で複数回上位入賞獲得し、2014年にAIベンチャーに参画。 深層学習を活用した画像解析の研究開発や新サービスの開発を経験後、創業メンバーとしてKICONIA WORKSに参画。
+主に受託開発での研究開発を行なっており、得意分野は画像処理(パターン認識系)を用いたアプリケーション、数理最適化を用いたアプリケーション開発。`,
+  avatarSrc: `${avatarBaseSrc}yuta_hinokuma.jpg`,
+} satisfies SpeakerInfo;
+
+export const Yuta_Hinokuma_en = {
+  ...Yuta_Hinokuma,
+  name: "YUTA HINOKUMA",
+} satisfies SpeakerInfo;
+
+export const Vitaly_Bragilevsky = {
+  name: "Vitaly Bragilevsky",
+  profile: "Rust/RustRover デベロッパーアドボケイト",
+  avatarSrc: `${avatarBaseSrc}vitaly_bragilevsky.png`,
+} satisfies SpeakerInfo;
+
+export const Vitaly_Bragilevsky_en = Vitaly_Bragilevsky;
