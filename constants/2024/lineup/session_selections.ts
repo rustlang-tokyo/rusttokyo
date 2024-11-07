@@ -24,12 +24,20 @@ import {
   session10B,
 } from "./context";
 import {
+  Aoyagi_Kohei,
   David_Lu,
+  FairyDevices,
   Haruki_Shimada,
+  Kohei_Yamamoto,
   Motoyuki_Kimura,
   Satoru_Nishio,
   Satoshi_Yoshikawa,
+  Sergi_Granell,
+  Shiseki_Reo,
   Shriram_Balaji,
+  Takuya_Moriyama,
+  Vitaly_Bragilevsky,
+  Yuta_Hinokuma,
   ahogappa,
   dorayakikun,
   keno,
@@ -95,31 +103,43 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
     ...session2B,
   },
   {
-    title: "COMING SOON",
+    title: "proc_macroによる錆びつかない実装",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch:
+      "外部APIに依存した実装をproc_macroを使って生成する手法とそのリスクの紹介",
+    speaker: [Shiseki_Reo],
+    pagePath: `/lineup/${session3A.id}`,
     ...session3A,
   },
   {
-    title: "COMING SOON",
+    title: "Rust と歩んだ 7 年間：プロダクションコードのための実践的テスト",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch: `ユニークビジョンは、SNS アカウント管理、CRM、SNS キャンペーンなどを通じて、企業と生活者のつながりを提供する SNS マーケティングツール「Beluga シリーズ」を開発・提供している会社です。
+このセッションでは、
+
+「仕様変更のたびにテストが壊れる」「外部APIの単体テストが書けない」「テストデータの作成・メンテナンスが煩雑」
+
+など、開発現場でよく直面するテストにまつわる課題に対して、実務でRustを7年使ってきた経験から得られた実践的な解決策をご紹介します。`,
+    speaker: [Aoyagi_Kohei],
+    pagePath: `/lineup/${session3B.id}`,
     ...session3B,
   },
   {
-    title: "COMING SOON",
+    title: "Fairy DevicesがRustを採用して5年が経ちました",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch:
+      "2022年からRust.Tokyoをスポンサーし続けて3回目になりました。2022年時点ではRust採用の動機と3年間の歩みについてお話しましたが、そこからさらに2年間、引き続きRustは開発チームにおいて多く利用しています。この2年間において、実施した新しい取り組みやそこで見えてきた課題や得られた知見についてお話したいと思います。",
+    speaker: [FairyDevices],
+    pagePath: `/lineup/${session4A.id}`,
     ...session4A,
   },
   {
-    title: "COMING SOON",
-    sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    title: "VDESターボエンコーダ/デコーダの実装を通じてRustを学ぶ",
+    sessionLanguage: "English",
+    elevatorPitch:
+      "本発表では、Rustをゼロから学び、VHFデータ交換システム（VDES）のターボエンコーダ/デコーダを実装した経験を共有します。Rustのエコシステムを活用して効率的な開発を行った方法について解説します。",
+    speaker: [Sergi_Granell],
+    pagePath: `/lineup/${session4B.id}`,
     ...session4B,
   },
   {
@@ -183,31 +203,45 @@ Async Rustのモニタリングツールとして、tracing crateやtokio-consol
     ...session7B,
   },
   {
-    title: "COMING SOON",
+    title: "総会員数1,500万人のレストランWeb予約サービスにおけるRustの活用",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch: `株式会社一休ではレストランのWeb予約ができるサービス「一休.comレストラン」を運営しています。
+
+この一休.comレストランでは、バックエンドシステムのRustへの移行が進んでいます。移行にあたっては、Rustの表現力の高い型システムの活用や高速／省リソースなバックエンドの運用を狙っています。また、今後長きに渡ってサービスを支えるバックエンドシステムとすべく、アーキテクチャや個別のモジュールの設計において技術的な考慮もいくつかおこなっています。
+
+このセッションでは、このような一休.comレストランにおけるRust移行の実際や工夫などについて紹介します。`,
+    speaker: [Kohei_Yamamoto],
+    pagePath: `/lineup/${session8A.id}`,
     ...session8A,
   },
   {
-    title: "COMING SOON",
+    title:
+      "Rustを使った社内用Webアプリの開発・運用を持続させるために、素材メーカーが学んだこと",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch:
+      "素材メーカーのソフトウェア内製開発部隊が、開発言語にRust 採用した後の２年間で、持続的な開発・運用のために行った、開発/運用体験向上のための試行錯誤や、過去（と今）の苦労談、学びなどを紹介します。",
+    speaker: [Takuya_Moriyama],
+    pagePath: `/lineup/${session8B.id}`,
     ...session8B,
   },
   {
-    title: "COMING SOON",
+    title: "動画像処理アプリをRust化してiPhoneSE上で240fpsで動かす",
     sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    elevatorPitch: `実際に存在した「Pythonで研究開発された、動画像処理アプリケーション」をiPhone上で240fpsで動作させるという案件に対して
+・どのような理由でRustを採用したのか？
+・どのように高速化を進めているのか？
+という観点をを通じて、画像処理 + iPhoneアプリにおけるRustの活用事例を共有します。`,
+    speaker: [Yuta_Hinokuma],
+    pagePath: `/lineup/${session9A.id}`,
     ...session9A,
   },
   {
-    title: "COMING SOON",
-    sessionLanguage: "日本語",
-    elevatorPitch: "",
-    speaker: [],
+    title: "Rust 開発を支えるツール – RustRover で日々の作業を効率化",
+    sessionLanguage: "English",
+    elevatorPitch:
+      "ソフトウェア開発者は、コードに向き合うだけでなく、さまざまなタスクをこなすことが求められます。調査によると、開発者の業務時間の半分ほどがコーディングに費やされると言われており、コード作業を全方位でサポートするツールが不可欠です。このセッションでは、Rust 開発者向けの万能ツール「RustRover」にスポットを当て、コードベースの探索、新しいコードの記述、デバッグ、依存関係の管理など、日々の開発業務にどのように役立つかを紹介します。",
+    speaker: [Vitaly_Bragilevsky],
+    pagePath: `/lineup/${session9B.id}`,
     ...session9B,
   },
   {
