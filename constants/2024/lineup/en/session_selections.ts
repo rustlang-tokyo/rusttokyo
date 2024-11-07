@@ -37,6 +37,7 @@ import {
   Shriram_Balaji_en,
   Takura_Moriyama_en,
   Vitaly_Bragilevsky_en,
+  Yuta_Hinokuma_en,
   ahogappa_en,
   dorayakikun,
   keno_en,
@@ -109,6 +110,7 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
     elevatorPitch:
       "Introduction to the method of generating implementations that rely on external APIs using proc_macro and its associated risks.",
     speaker: [Shiseki_Reo_en],
+    pagePath: `/lineup/en/${session3A.id}`,
     ...session3A,
   },
   {
@@ -121,6 +123,7 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
 
 など、開発現場でよく直面するテストにまつわる課題に対して、実務でRustを7年使ってきた経験から得られた実践的な解決策をご紹介します。`,
     speaker: [Aoyagi_Kohei_en],
+    pagePath: `/lineup/en/${session3B.id}`,
     ...session3B,
   },
   {
@@ -129,16 +132,18 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
     elevatorPitch:
       "2022年からRust.Tokyoをスポンサーし続けて3回目になりました。2022年時点ではRust採用の動機と3年間の歩みについてお話しましたが、そこからさらに2年間、引き続きRustは開発チームにおいて多く利用しています。この2年間において、実施した新しい取り組みやそこで見えてきた課題や得られた知見についてお話したいと思います。",
     speaker: [FairyDevices_en],
+    pagePath: `/lineup/en/${session4A.id}`,
     ...session4A,
   },
   {
     title: "Learning Rust by Implementing a VDES Turbo Encoder/Decoder",
-    sessionLanguage: "日本語",
+    sessionLanguage: "English",
     elevatorPitch: `This presentation shares my experience learning Rust from
 scratch while implementing a turbo encoder/decoder for the VHF Data
 Exchange System (VDES). I will discuss how utilizing the Rust
 ecosystem enabled efficient development.`,
     speaker: [Sergi_Granell_en],
+    pagePath: `/lineup/en/${session4B.id}`,
     ...session4B,
   },
   {
@@ -212,6 +217,7 @@ In this session, I will discuss the existing tools, along with the technical det
 
 このセッションでは、このような一休.comレストランにおけるRust移行の実際や工夫などについて紹介します。`,
     speaker: [Kohei_Yamamoto_en],
+    pagePath: `/lineup/en/${session8A.id}`,
     ...session8A,
   },
   {
@@ -221,6 +227,7 @@ In this session, I will discuss the existing tools, along with the technical det
     elevatorPitch:
       "素材メーカーのソフトウェア内製開発部隊が、開発言語にRust 採用した後の２年間で、持続的な開発・運用のために行った、開発/運用体験向上のための試行錯誤や、過去（と今）の苦労談、学びなどを紹介します。",
     speaker: [Takura_Moriyama_en],
+    pagePath: `/lineup/en/${session8B.id}`,
     ...session8B,
   },
   {
@@ -230,15 +237,17 @@ In this session, I will discuss the existing tools, along with the technical det
 ・どのような理由でRustを採用したのか？
 ・どのように高速化を進めているのか？
 という観点をを通じて、画像処理 + iPhoneアプリにおけるRustの活用事例を共有します。`,
-    speaker: [],
+    speaker: [Yuta_Hinokuma_en],
+    pagePath: `/lineup/en/${session9A.id}`,
     ...session9A,
   },
   {
     title: "Rust 開発を支えるツール – RustRover で日々の作業を効率化",
-    sessionLanguage: "日本語",
+    sessionLanguage: "English",
     elevatorPitch:
       "ソフトウェア開発者は、コードに向き合うだけでなく、さまざまなタスクをこなすことが求められます。調査によると、開発者の業務時間の半分ほどがコーディングに費やされると言われており、コード作業を全方位でサポートするツールが不可欠です。このセッションでは、Rust 開発者向けの万能ツール「RustRover」にスポットを当て、コードベースの探索、新しいコードの記述、デバッグ、依存関係の管理など、日々の開発業務にどのように役立つかを紹介します。",
     speaker: [Vitaly_Bragilevsky_en],
+    pagePath: `/lineup/en/${session9B.id}`,
     ...session9B,
   },
   {

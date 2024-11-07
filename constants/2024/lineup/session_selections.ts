@@ -105,10 +105,8 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
   {
     title: "proc_macroによる錆びつかない実装",
     sessionLanguage: "日本語",
-    elevatorPitch: `昨年、私はRustでOpenAI APIを使用してLLMを使用するCLIアプリケーション(FerriteChatter)を作成しました。
-外部APIのクライアントとして動作するアプリケーションの作成時、レスポンスをもとに挙動や実装が変化する事があります。
-今回の発表ではOpenAI APIを例に、ビルド時にAPIを叩き、そのレスポンスをもとにEnumと実装をproc_macroで生成した事例を紹介します。
-また、そういった実装を行った際に発生するGitHub Actionsの使用上のリスクについても取り上げます。`,
+    elevatorPitch:
+      "外部APIに依存した実装をproc_macroを使って生成する手法とそのリスクの紹介",
     speaker: [Shiseki_Reo],
     pagePath: `/lineup/${session3A.id}`,
     ...session3A,
@@ -139,7 +137,7 @@ SkyWayは、WebRTCの次の技術としてMedia Over Quic Transportに注目し�
     title: "VDESターボエンコーダ/デコーダの実装を通じてRustを学ぶ",
     sessionLanguage: "English",
     elevatorPitch:
-      "発表では、VDESの技術的背景とITU-R M.2092-1の要件について説明します。その後、ターボ符号化と復号化の実装プロセスを紹介し、Rustの特徴がどのように開発をサポートしたかを具体例を交えてお話しします。最後に、Rustを学ぶ過程で直面した課題や困難についても触れます。",
+      "本発表では、Rustをゼロから学び、VHFデータ交換システム（VDES）のターボエンコーダ/デコーダを実装した経験を共有します。Rustのエコシステムを活用して効率的な開発を行った方法について解説します。",
     speaker: [Sergi_Granell],
     pagePath: `/lineup/${session4B.id}`,
     ...session4B,

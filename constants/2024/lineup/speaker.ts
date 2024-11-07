@@ -168,6 +168,7 @@ export const Shiseki_Reo = {
   name: "紫関 麗王",
   profile: "GMOペパボ セキュリティ対策室, SECCON CTF Administrator",
   twitterAccount: "n01e0",
+  githubAccount: "n01e0",
   avatarSrc: `${avatarBaseSrc}shiseki_reo.jpg`,
 } satisfies SpeakerInfo;
 
