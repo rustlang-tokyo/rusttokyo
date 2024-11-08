@@ -37,13 +37,14 @@ export function Eyecatch(props: {
           {props.textSource.purchaseTicketText}
         </LinkButton>
       </Box>
-      {/* <Box mt="20px">
-        <Button leftIcon={<RiTicket2Line />} width={275.4}>
-          <Link href="https://rust.connpass.com/event/296283/" isExternal>
-            {props.textSource.registerAttendOnline}
-          </Link>
-        </Button>
-      </Box> */}
+      <Box mt="20px">
+        <LinkButton
+          href="https://rust.connpass.com/event/332570/"
+          leftIcon={<RiTicket2Line />}
+        >
+          {props.textSource.registerAttendOnline}
+        </LinkButton>
+      </Box>
     </Container>
   );
 }
