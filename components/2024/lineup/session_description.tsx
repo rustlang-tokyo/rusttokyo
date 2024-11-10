@@ -1,5 +1,5 @@
 import type { SelectedSession } from "@/constants/2024/lineup/context";
-import type { SpeakerInfo } from "@/constants/2024/lineup/speaker";
+import type { SpeakerDescription } from "@/constants/2024/lineup/speaker";
 import type { SessionListPageTexts } from "@/constants/2024/lineup/text";
 import * as track from "@/constants/2024/lineup/track";
 import {
@@ -121,7 +121,7 @@ export function SessionDescription(props: {
         </Heading>
 
         <SimpleGrid columns={speakerColumnSize} spacing={10}>
-          {props.session.speaker.map((speaker: SpeakerInfo) => {
+          {props.session.speaker.map((speaker: SpeakerDescription) => {
             return (
               <Box key={speaker.name} pt={4}>
                 <VStack spacing={4}>
@@ -141,7 +141,9 @@ export function SessionDescription(props: {
                       />
                     </Box>
                     <Text fontSize="lg" fontWeight="500">
-                      {speaker.name}
+                      {speaker.kind === "applied"
+                        ? speaker.name
+                        : `${speaker.name} (${speaker.company})`}
                     </Text>
                     <Box>
                       <Wrap>

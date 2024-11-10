@@ -1,6 +1,6 @@
 import { trackHeadlinesA, trackHeadlinesB } from "@/constants/2024/css/css";
 import type { SelectedSession } from "@/constants/2024/lineup/context";
-import type { SpeakerInfo } from "@/constants/2024/lineup/speaker";
+import type { SpeakerDescription } from "@/constants/2024/lineup/speaker";
 import type { SessionListPageTexts } from "@/constants/2024/lineup/text";
 import * as track from "@/constants/2024/lineup/track";
 import {
@@ -39,7 +39,7 @@ function SessionCard(props: {
     >
       <Box pb={2}>
         <Wrap>
-          {props.session.speaker.map((speaker: SpeakerInfo) => (
+          {props.session.speaker.map((speaker: SpeakerDescription) => (
             <WrapItem key={speaker.name}>
               <HStack>
                 {speaker.objectFit != null ? (
@@ -66,8 +66,11 @@ function SessionCard(props: {
                     padding={speaker.padding || 0}
                   />
                 )}
-
-                <Text fontSize="sm">{speaker.name}</Text>
+                <Text fontSize="sm">
+                  {speaker.kind === "applied"
+                    ? speaker.name
+                    : `${speaker.name} (${speaker.company})`}
+                </Text>
               </HStack>
             </WrapItem>
           ))}
