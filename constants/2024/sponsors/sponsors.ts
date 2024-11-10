@@ -10,6 +10,16 @@ export type GoldSponsorList = {
   en: GoldSponsor[];
 };
 
+export const GoldSponsorKey = {
+  KICONIA_WORKS: 0,
+  FAIRY_DEVICES: 1,
+  IKYU: 2,
+  UNIQUE_VISION: 3,
+  ARK_EDGE_SPACE: 4,
+  AGC: 5,
+  JET_BRAINS: 6,
+} as const;
+
 export const goldSponsors: GoldSponsorList = {
   ja: [
     {

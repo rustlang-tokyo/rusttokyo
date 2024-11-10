@@ -1,9 +1,9 @@
-import type { SpeakerInfo } from "./speaker";
+import type { SpeakerDescription } from "./speaker";
 
 export type SelectedSession = SelectedSessionBase & {
   title: string;
   elevatorPitch: string;
-  speaker: SpeakerInfo[];
+  speaker: SpeakerDescription[];
   pagePath?: string;
   sessionLanguage: "日本語" | "English";
   captionLanguage?: "日本語" | "English";
