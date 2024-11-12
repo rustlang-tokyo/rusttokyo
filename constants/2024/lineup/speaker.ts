@@ -316,8 +316,9 @@ export const Vitaly_Bragilevsky = {
   name: "Vitaly Bragilevsky",
   kind: "sponsor",
   profile: "Rust/RustRover デベロッパーアドボケイト",
-  avatarSrc: `${avatarBaseSrc}vitaly_bragilevsky.png`,
+  avatarSrc: `${avatarBaseSrc}vitaly_bragilevsky.jpg`,
   company: goldSponsors.ja[GoldSponsorKey.JET_BRAINS].name,
+  twitterAccount: "VBragilevsky",
 } satisfies SponsorSpeakerDescription;
 
 export const Vitaly_Bragilevsky_en = Vitaly_Bragilevsky;
