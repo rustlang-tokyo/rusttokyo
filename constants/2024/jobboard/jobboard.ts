@@ -8,13 +8,17 @@ type JobBoardSponsorList = {
 export const sponsors: JobBoardSponsorList = {
   ja: [
     // venue sponsors
-    // {
-    //   name: "GMOインターネットグループ",
-    //   imgSrc: "/static/2024/sponsors/04@3x.png",
-    //   description:
-    //     "",
-    //   url: "",
-    // },
+    {
+      name: "GMOペパボ株式会社",
+      imgSrc: "/static/2024/sponsors/gmo_pepabo.png",
+      description:
+        "GMOペパボは、「人類のアウトプットを増やす」をミッションに、表現者やクリエイターを支援するサービスを展開しています。" +
+        "1,710万点以上の作品が販売・展示されている国内最大のハンドメイドマーケット「minne」をはじめ、イラストレーターやYouTuber、お笑い芸人から企業まで77万超のクリエイターが登録するオリジナルグッズ作成・販売サービス「SUZURI」など個人から法人まで幅広くご利用いただいています。" +
+        "オリジナルグッズ作成・販売サービス「SUZURI」ではグッズと投稿画像の合成にRustを活用しています。" +
+        "現在GMOペパボではRustが書けるソフトウェアエンジニア他、エンジニアリングリード、デザイナーなど幅広く募集をしております。" +
+        "少しでも興味がある方は、ぜひカジュアル面談でお話ししましょう！",
+      url: "https://recruit.pepabo.com/info/career/joblist-engineer/#info-career-joblist",
+    },
     // gold sponsors
     {
       name: "株式会社KICONIA WORKS",
@@ -112,7 +116,7 @@ export const sponsors: JobBoardSponsorList = {
         "ポテンシャルの大きい日本市場において、 5年間で10倍の成長を目指しています。" +
         "今回は事業の立ち上げメンバーとして、カスタマーサクセス(Customer Success)の社員を募集します。" +
         "あなたのIT知識を活かして、スタートアップで活躍してみませんか？ ",
-      url: "https://nattosystem.com/",
+      url: "https://nattosystem.com/support/faq/detail/400",
     },
     // silver sponsors
     {
