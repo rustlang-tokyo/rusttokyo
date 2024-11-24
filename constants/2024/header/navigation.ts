@@ -40,3 +40,8 @@ export const jobboardPagePath = {
   ja: "/jobboard/",
   en: "/jobboard/en/",
 };
+
+export const accessPagePath = {
+  ja: "/access/",
+  en: "/access/en/",
+};
