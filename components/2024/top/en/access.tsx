@@ -15,7 +15,7 @@ export function Access(props: { isPc: boolean }) {
           will be no food or drinks provided at the venue on the day.
         </Text>
         <Text fontSize={contentFontSize} textAlign="center">
-          Additionally, re-entry to the event venue will be difficult, so please
+          Additionally, re-entry to the event venue is difficult, so please
           make sure to prepare your lunch in advance before entering.
         </Text>
         <Heading as="h3" size="lg" mt={4}>
