@@ -15,7 +15,8 @@ export function Access(props: { isPc: boolean }) {
           当日は会場にて飲食の提供はありません。
         </Text>
         <Text fontSize={contentFontSize} textAlign="center">
-          また、イベント会場への再入場が難しいため、入場前にお昼ご飯の用意を各自でお願いします。
+          また、イベント会場への再入場ができないため、入場前にお昼ご飯の用意を各自でお願いします。
+          会場内でペットボトルのお水の配布は予定していますが、それ以外の飲料は事前にご購入ください。
         </Text>
         <Heading as="h3" size="lg" mt={4}>
           入場方法
