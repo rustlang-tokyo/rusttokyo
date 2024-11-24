@@ -1,5 +1,6 @@
 import { Meta } from "@/components/2024/common/meta";
 import { SponsorList } from "@/components/2024/sponsors/sponsor_list";
+import { Access } from "@/components/2024/top/en/access";
 import { Footer } from "@/components/2024/top/en/footer";
 import { Header } from "@/components/2024/top/en/header";
 import { Location } from "@/components/2024/top/en/location";
@@ -53,6 +54,9 @@ export default function index() {
             </VStack>
           </Center>
         </Container>
+      </Box>
+      <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
+        <Access isPc={isPc} />
       </Box>
       <Box bg="vampireBlack.100" py={{ base: 12 }} pb={24}>
         <Location isPc={isPc} />
