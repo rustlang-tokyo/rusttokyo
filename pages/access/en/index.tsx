@@ -1,8 +1,8 @@
 import { Meta } from "@/components/2024/common/meta";
 import { Access } from "@/components/2024/top/en/access";
+import { Header } from "@/components/2024/top/en/header";
 import { Location } from "@/components/2024/top/en/location";
 import { Footer } from "@/components/2024/top/footer";
-import { Header } from "@/components/2024/top/header";
 import { accessPagePath } from "@/constants/2024/header/navigation";
 import { access } from "@/constants/2024/title/pagetitle";
 import { Box, Center, Container, VStack } from "@chakra-ui/react";
