@@ -1,5 +1,5 @@
 import { headlines } from "@/constants/2024/css/css";
-import { Container, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import { Container, Heading, Text, VStack } from "@chakra-ui/react";
 
 export function Access(props: { isPc: boolean }) {
   const contentFontSize = props.isPc ? "md" : "sm";
@@ -12,30 +12,13 @@ export function Access(props: { isPc: boolean }) {
         </Heading>
         <Text fontSize={contentFontSize} textAlign="center">
           渋谷フクラス 16階にて開催いたします。
-          当日は会場にて飲食の提供はありません。
+          当日はオフィスエントランス(2階)より入場し、8階のGMO受付までお越しください。
         </Text>
         <Text fontSize={contentFontSize} textAlign="center">
-          また、イベント会場への再入場ができないため、入場前にお昼ご飯の用意を各自でお願いします。
+          また、会場内でペットボトルのお水の配布は予定していますが、それ以外の飲食物の提供は予定していません。
         </Text>
         <Text fontSize={contentFontSize} textAlign="center">
-          会場内でペットボトルのお水の配布は予定していますが、それ以外の飲料は事前にご購入ください。
-        </Text>
-        <Heading as="h3" size="lg" mt={4}>
-          入場方法
-        </Heading>
-        <Text fontSize={contentFontSize} textAlign="center">
-          当日は休日のため、平日とはイベント会場への入場方法が異なります。
-        </Text>
-        <Text fontSize={contentFontSize} textAlign="center">
-          詳しくは
-          <Link
-            color={"cottonCandy.100"}
-            target="_blank"
-            href="https://www.gmo.jp/company-profile/access-map/fukuras02/"
-          >
-            渋谷フクラス入館方法
-          </Link>
-          をご覧ください。
+          イベント会場への再入場ができないため、入場前にお昼ご飯の用意を各自でお願いします。
         </Text>
       </VStack>
     </Container>

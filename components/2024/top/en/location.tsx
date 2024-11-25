@@ -19,7 +19,7 @@ export function Location(props: { isPc: boolean }) {
           GMO Internet Group’s second main office GMO Yours, Fukuras
         </Text>
         <Text fontSize={contentFontSize}>
-          Please come to the reception desk on the 16th floor.
+          Please come to the reception desk on the 8th floor.
         </Text>
         <iframe
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr0GFVeuLGGAREhIcwnkAIfk&key=AIzaSyB87GSaKUDt-2vax2m6M7y-jdKXF4sOSB0&language=en"
