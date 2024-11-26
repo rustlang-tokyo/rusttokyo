@@ -37,3 +37,8 @@ export const jobboard = {
   ja: "ジョブボード",
   en: "JobBoard",
 };
+
+export const access = {
+  ja: "アクセス",
+  en: "Access",
+};

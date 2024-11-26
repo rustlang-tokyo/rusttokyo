@@ -1,9 +1,9 @@
 import { Meta } from "@/components/2024/common/meta";
 import { SponsorList } from "@/components/2024/sponsors/sponsor_list";
+import { Eyecatch } from "@/components/2024/top/en/eyecatch";
 import { Footer } from "@/components/2024/top/en/footer";
 import { Header } from "@/components/2024/top/en/header";
 import { Location } from "@/components/2024/top/en/location";
-import { Eyecatch } from "@/components/2024/top/eyecatch";
 import { Organizers } from "@/components/2024/top/organizers";
 import { Staff } from "@/components/2024/top/staff";
 import { headlines } from "@/constants/2024/css/css";

@@ -17,7 +17,6 @@ export function Location(props: { isPc: boolean }) {
         <Text fontSize={contentFontSize}>
           GMOインターネットグループ　グループ第２本社　GMO Yours・フクラス
         </Text>
-        <Text fontSize={contentFontSize}>8F 受付までお越しください。</Text>
         <iframe
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr0GFVeuLGGAREhIcwnkAIfk&key=AIzaSyB87GSaKUDt-2vax2m6M7y-jdKXF4sOSB0&language=ja"
           allowFullScreen

@@ -1,5 +1,6 @@
 import {
   type PagePath,
+  accessPagePath,
   cocPagePath,
   jobboardPagePath,
   lineupPagePath,
@@ -50,6 +51,14 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
                     fontWeight={700}
                   >
                     LINE UP & SCHEDULE
+                  </Link>
+                  <Link
+                    p={2}
+                    href={accessPagePath.en}
+                    fontSize={"sm"}
+                    fontWeight={700}
+                  >
+                    ACCESS
                   </Link>
                   <Link
                     p={2}
@@ -158,6 +167,11 @@ export function Header(props: { isPc: boolean; currentPage: PagePath }) {
               <Box>
                 <Link href={lineupPagePath.en} fontSize={"md"} fontWeight={700}>
                   LINE UP & SCHEDULE
+                </Link>
+              </Box>
+              <Box>
+                <Link href={accessPagePath.en} fontSize={"md"} fontWeight={700}>
+                  ACCESS
                 </Link>
               </Box>
               <Box>
