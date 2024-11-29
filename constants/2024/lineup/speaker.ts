@@ -1,9 +1,5 @@
 import type { SystemProps } from "@chakra-ui/react";
-import {
-  GoldSponsorKey,
-  goldSponsors,
-  venueSponsors,
-} from "../sponsors/sponsors";
+import { GoldSponsorKey, goldSponsors } from "../sponsors/sponsors";
 
 export type Description = {
   name: string;
