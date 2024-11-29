@@ -1,9 +1,5 @@
 import type { SystemProps } from "@chakra-ui/react";
-import {
-  GoldSponsorKey,
-  goldSponsors,
-  venueSponsors,
-} from "../sponsors/sponsors";
+import { GoldSponsorKey, goldSponsors } from "../sponsors/sponsors";
 
 export type Description = {
   name: string;
@@ -208,7 +204,7 @@ export const Shiseki_Reo = {
   twitterAccount: "n01e0",
   githubAccount: "n01e0",
   avatarSrc: `${avatarBaseSrc}shiseki_reo.jpg`,
-  company: venueSponsors.ja[0].name,
+  company: "GMOペパボ株式会社", // 会場スポンサー登壇者の所属会社が異なるため、ベタ書きとする
 } satisfies SponsorSpeakerDescription;
 
 export const Shiseki_Reo_en = {
