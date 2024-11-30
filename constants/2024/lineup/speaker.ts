@@ -227,10 +227,7 @@ export const Aoyagi_Kohei_en = Aoyagi_Kohei;
 export const FairyDevices = {
   name: "Fairy Devices株式会社",
   kind: "sponsor",
-  profile: `自社開発の首掛け型ウェアラブルデバイスTHINKLETと音声AIプラットフォームmimiによって、現場
-DXサービスを提供しています。私たちはデバイスと音声処理技術をもとに、インターネットに存在
-しない情報をデータ化し、機械知能が理解可能にすること、その結果として人類のあらゆる知識を叡
-智として流通可能にすることを目指しています。`,
+  profile: `自社開発の首掛け型ウェアラブルデバイスTHINKLETと音声AIプラットフォームmimiによって、現場DXサービスを提供しています。私たちはデバイスと音声処理技術をもとに、インターネットに存在しない情報をデータ化し、機械知能が理解可能にすること、その結果として人類のあらゆる知識を叡智として流通可能にすることを目指しています。`,
   avatarSrc: `${avatarBaseSrc}fairy_devices.png`,
   objectFit: "contain",
   company: goldSponsors.ja[GoldSponsorKey.FAIRY_DEVICES].name,
