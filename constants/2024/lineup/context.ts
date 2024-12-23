@@ -218,7 +218,7 @@ export const session6B: SelectedSessionBase = {
   renderDesc: true,
   presentationSlide: {
     title: "smithay で作って動かす Wayland compositor",
-    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnZ4M0s5SG1zZXpDY3FKa2RjZkh4SDRHWTJ6QXxBQ3Jtc0trVjRyRVBlLVBFRXRYcjVBUHNBanZuNzZhbTM5eUJEUlBjSDRGeU5HcnUtbjNYWFc2eFo2OTlrNGg4RXZ5dGRhVkxvWWZNM2ZmaUpjckxHTk9QMFNxNDl5aFhmNjBHT1VkejZLTG9kZkh1eDg3VFZfWQ&q=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1x8CMBxYoSoU1f9xSbY5VkZ-toDTOJxxYkm7LOPaGx0s%2Fedit%23slide%3Did.g31af952cf01_0_1&v=-Qx3gWW1vNE",
+    url: "https://docs.google.com/presentation/d/1x8CMBxYoSoU1f9xSbY5VkZ-toDTOJxxYkm7LOPaGx0s/edit#slide=id.g31af952cf01_0_1",
   },
   youtube: {
     url: "https://youtu.be/-Qx3gWW1vNE?si=ZDOXuUcQvuDStNyg",
