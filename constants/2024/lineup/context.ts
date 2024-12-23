@@ -48,7 +48,7 @@ export const session1A: SelectedSessionBase = {
   renderDesc: true,
   presentationSlide: {
     title: "大規模プロダクトのための Cargo Workspaces ベストプラクティス ",
-    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblpzWGpwLWl0a2Z5ZEdsT0NrMWNsa2ZFOGgwQXxBQ3Jtc0ttZkc1Mm5lVlRXV0hMRHhzVjVBR0d4ajJfUHFZSDRWZHU2NDAwOUJ3LThDaHdkWDRBQkpkeUw1azNkeG1iQmxXeW9lVnM0SENMdU1nSzhmMVdBQ0UwSXZxLXJrcUVGdkY5LXgyYjFFWHBfc29vbTNOUQ&q=https%3A%2F%2Fspeakerdeck.com%2Fmnawa%2Fda-gui-mo-purodakutonotameno-cargo-workspaces-besutopurakuteisu&v=Q-7WTaJU-hY",
+    url: "https://speakerdeck.com/mnawa/da-gui-mo-purodakutonotameno-cargo-workspaces-besutopurakuteisu",
   },
   youtube: {
     url: "https://youtu.be/Q-7WTaJU-hY?si=vKRdwpTLVlf3gpru",
@@ -236,7 +236,7 @@ export const session7A: SelectedSessionBase = {
   renderDesc: true,
   presentationSlide: {
     title: "ONNX推論クレートの比較と実装奮闘記",
-    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEF0UlpzSi1YQ3V4dWdrZ3FEbEMzdTVKVjNUd3xBQ3Jtc0trbWMyX2Nvd3VfSWhjTU1EcVkyWFV6ZkhidnNrSDJKSUVRQkY3c0ZLbXVNTDhDWnlsWlZnOUlmNXppVGRCcFFZU3liZFZFUS0tckFEcng0YkltcFVJWndNbEI2N05oVXZhSUVJOVdmQmZ6ekVpaWVBRQ&q=https%3A%2F%2Fspeakerdeck.com%2Femergent%2Frust-tokyo-2024-comparing-onnx-crates&v=RiNzCFqcJYQ",
+    url: "https://speakerdeck.com/emergent/rust-tokyo-2024-comparing-onnx-crates",
   },
   youtube: {
     url: "https://youtu.be/RiNzCFqcJYQ?si=djZxWnF_HVp7RjCh",
@@ -254,7 +254,7 @@ export const session7B: SelectedSessionBase = {
   renderDesc: true,
   presentationSlide: {
     title: "Overcoming Callback Hell When Integrating C into Rust",
-    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEFwekJ6OFVHeURkTE82VFZmM3pvRUEwX0FnZ3xBQ3Jtc0tsSlZDdW9BZFFPaTZ3Y0NLYnpZVVREZTFTZm1ZQmlKNHlkOG1ZalJPdVFudjRzY1VNemJUYzZvTlpRMjdFdzlxOUxNZTdFbE5GeDR2c1hmVDNJbTljTUZvT2J0Nm5BU0gybTk4dEtCR24xN19NOUZsOA&q=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1iS95e6D3lvLKsoGqHU4-6q9MOuVpsPvSwuOI6ydNc9s%2Fedit%3Fusp%3Dsharing&v=BBZLNQzcJTw",
+    url: "https://docs.google.com/presentation/d/1iS95e6D3lvLKsoGqHU4-6q9MOuVpsPvSwuOI6ydNc9s/edit#slide=id.p",
   },
   youtube: {
     url: "https://youtu.be/BBZLNQzcJTw?si=XoFVAK_79eiO87ro",
