@@ -22,6 +22,9 @@ export type SelectedSessionBase = {
     title: string;
     url: string;
   };
+  youtube?: {
+    url: string;
+  };
 };
 
 export const opening: SelectedSessionBase = {
@@ -43,6 +46,13 @@ export const session1A: SelectedSessionBase = {
   order: 1,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "大規模プロダクトのための Cargo Workspaces ベストプラクティス ",
+    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblpzWGpwLWl0a2Z5ZEdsT0NrMWNsa2ZFOGgwQXxBQ3Jtc0ttZkc1Mm5lVlRXV0hMRHhzVjVBR0d4ajJfUHFZSDRWZHU2NDAwOUJ3LThDaHdkWDRBQkpkeUw1azNkeG1iQmxXeW9lVnM0SENMdU1nSzhmMVdBQ0UwSXZxLXJrcUVGdkY5LXgyYjFFWHBfc29vbTNOUQ&q=https%3A%2F%2Fspeakerdeck.com%2Fmnawa%2Fda-gui-mo-purodakutonotameno-cargo-workspaces-besutopurakuteisu&v=Q-7WTaJU-hY",
+  },
+  youtube: {
+    url: "https://youtu.be/Q-7WTaJU-hY?si=vKRdwpTLVlf3gpru",
+  },
 };
 
 export const session1B: SelectedSessionBase = {
@@ -54,6 +64,13 @@ export const session1B: SelectedSessionBase = {
   order: 2,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "Rust で TUI アプリケーションを作った話",
+    url: "https://speakerdeck.com/ynqa/make-tui-application-in-rust",
+  },
+  youtube: {
+    url: "https://youtu.be/c7kAC8c_xYw?si=t74_GhCLI3kdvZeO",
+  },
 };
 
 export const session2A: SelectedSessionBase = {
@@ -65,6 +82,9 @@ export const session2A: SelectedSessionBase = {
   order: 3,
   sessionType: "Short Talk",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/pYz2XQekAds?si=8wuIAANGAVM_Ftok",
+  },
 };
 
 export const session2B: SelectedSessionBase = {
@@ -76,6 +96,9 @@ export const session2B: SelectedSessionBase = {
   order: 4,
   sessionType: "Short Talk",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/i93ty5_X1vc?si=mloYgC3UtFSe3yan",
+  },
 };
 
 export const session3A: SelectedSessionBase = {
@@ -87,6 +110,9 @@ export const session3A: SelectedSessionBase = {
   order: 5,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/nUeySTxipcs?si=y1TWjL7U4F0cbt2t",
+  },
 };
 
 export const session3B: SelectedSessionBase = {
@@ -98,6 +124,9 @@ export const session3B: SelectedSessionBase = {
   order: 6,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/U6T6GOXWGqs?si=NNSGizM3ZiNcTBrQ",
+  },
 };
 
 export const session4A: SelectedSessionBase = {
@@ -109,6 +138,13 @@ export const session4A: SelectedSessionBase = {
   order: 7,
   sessionType: "Sponsor",
   renderDesc: true,
+  presentationSlide: {
+    title: "Fairy DevicesがRustを採用して 5年が経ちました",
+    url: "https://speakerdeck.com/emergent/fairy-devicesgarustwocai-yong-site-5nian-gajing-timasita",
+  },
+  youtube: {
+    url: "https://youtu.be/Byeu5Md7TCk?si=WtGh-RsKES-3Dwwo",
+  },
 };
 
 export const session4B: SelectedSessionBase = {
@@ -120,6 +156,9 @@ export const session4B: SelectedSessionBase = {
   order: 8,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/ZwqZ6cwMkLQ?si=JP6LEbUSFtz-5Mey",
+  },
 };
 
 export const session5A: SelectedSessionBase = {
@@ -131,6 +170,13 @@ export const session5A: SelectedSessionBase = {
   order: 9,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "Instrumenting Async Runtime",
+    url: "https://speakerdeck.com/kimuramotoyuki/instrumenting-async-runtime",
+  },
+  youtube: {
+    url: "https://youtu.be/Sa4ncpmvrHc?si=nHSnUCG6ZqeEjLYa",
+  },
 };
 
 export const session5B: SelectedSessionBase = {
@@ -142,6 +188,9 @@ export const session5B: SelectedSessionBase = {
   order: 10,
   sessionType: "Short Talk",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/RP2Vebt3D1Q?si=CAZVO220nAdFrjlR",
+  },
 };
 
 export const session6A: SelectedSessionBase = {
@@ -153,6 +202,9 @@ export const session6A: SelectedSessionBase = {
   order: 11,
   sessionType: "Short Talk",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/gCXQrhVRaIc?si=Fdxm37_YhNRJwehp",
+  },
 };
 
 export const session6B: SelectedSessionBase = {
@@ -164,6 +216,13 @@ export const session6B: SelectedSessionBase = {
   order: 12,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "smithay で作って動かす Wayland compositor",
+    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnZ4M0s5SG1zZXpDY3FKa2RjZkh4SDRHWTJ6QXxBQ3Jtc0trVjRyRVBlLVBFRXRYcjVBUHNBanZuNzZhbTM5eUJEUlBjSDRGeU5HcnUtbjNYWFc2eFo2OTlrNGg4RXZ5dGRhVkxvWWZNM2ZmaUpjckxHTk9QMFNxNDl5aFhmNjBHT1VkejZLTG9kZkh1eDg3VFZfWQ&q=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1x8CMBxYoSoU1f9xSbY5VkZ-toDTOJxxYkm7LOPaGx0s%2Fedit%23slide%3Did.g31af952cf01_0_1&v=-Qx3gWW1vNE",
+  },
+  youtube: {
+    url: "https://youtu.be/-Qx3gWW1vNE?si=ZDOXuUcQvuDStNyg",
+  },
 };
 
 export const session7A: SelectedSessionBase = {
@@ -175,6 +234,13 @@ export const session7A: SelectedSessionBase = {
   order: 13,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "ONNX推論クレートの比較と実装奮闘記",
+    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEF0UlpzSi1YQ3V4dWdrZ3FEbEMzdTVKVjNUd3xBQ3Jtc0trbWMyX2Nvd3VfSWhjTU1EcVkyWFV6ZkhidnNrSDJKSUVRQkY3c0ZLbXVNTDhDWnlsWlZnOUlmNXppVGRCcFFZU3liZFZFUS0tckFEcng0YkltcFVJWndNbEI2N05oVXZhSUVJOVdmQmZ6ekVpaWVBRQ&q=https%3A%2F%2Fspeakerdeck.com%2Femergent%2Frust-tokyo-2024-comparing-onnx-crates&v=RiNzCFqcJYQ",
+  },
+  youtube: {
+    url: "https://youtu.be/RiNzCFqcJYQ?si=djZxWnF_HVp7RjCh",
+  },
 };
 
 export const session7B: SelectedSessionBase = {
@@ -186,6 +252,13 @@ export const session7B: SelectedSessionBase = {
   order: 14,
   sessionType: "Short Talk",
   renderDesc: true,
+  presentationSlide: {
+    title: "Overcoming Callback Hell When Integrating C into Rust",
+    url: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEFwekJ6OFVHeURkTE82VFZmM3pvRUEwX0FnZ3xBQ3Jtc0tsSlZDdW9BZFFPaTZ3Y0NLYnpZVVREZTFTZm1ZQmlKNHlkOG1ZalJPdVFudjRzY1VNemJUYzZvTlpRMjdFdzlxOUxNZTdFbE5GeDR2c1hmVDNJbTljTUZvT2J0Nm5BU0gybTk4dEtCR24xN19NOUZsOA&q=https%3A%2F%2Fdocs.google.com%2Fpresentation%2Fd%2F1iS95e6D3lvLKsoGqHU4-6q9MOuVpsPvSwuOI6ydNc9s%2Fedit%3Fusp%3Dsharing&v=BBZLNQzcJTw",
+  },
+  youtube: {
+    url: "https://youtu.be/BBZLNQzcJTw?si=XoFVAK_79eiO87ro",
+  },
 };
 
 export const session8A: SelectedSessionBase = {
@@ -197,6 +270,9 @@ export const session8A: SelectedSessionBase = {
   order: 15,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/luHR9GWLfEg?si=jB48HeJEyspb87jP",
+  },
 };
 
 export const session8B: SelectedSessionBase = {
@@ -208,6 +284,9 @@ export const session8B: SelectedSessionBase = {
   order: 16,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/FmqyHkt8D48?si=u8vsp2NyeAe8ajlI",
+  },
 };
 
 export const session9A: SelectedSessionBase = {
@@ -219,6 +298,9 @@ export const session9A: SelectedSessionBase = {
   order: 17,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/A-acELSORK4?si=IA80yHwzvxPt5Ke4",
+  },
 };
 
 export const session9B: SelectedSessionBase = {
@@ -230,6 +312,9 @@ export const session9B: SelectedSessionBase = {
   order: 18,
   sessionType: "Sponsor",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/Dy_feHENFUQ?si=aiTt31ZDUKsda1uh",
+  },
 };
 
 export const session10A: SelectedSessionBase = {
@@ -241,6 +326,9 @@ export const session10A: SelectedSessionBase = {
   order: 19,
   sessionType: "Long Talk",
   renderDesc: true,
+  youtube: {
+    url: "https://youtu.be/I0JvqbRCI2U?si=M8UwmJSflR5_Akqk",
+  },
 };
 
 export const session10B: SelectedSessionBase = {
@@ -252,6 +340,14 @@ export const session10B: SelectedSessionBase = {
   order: 20,
   sessionType: "Long Talk",
   renderDesc: true,
+  presentationSlide: {
+    title:
+      "日本全国・都市3D化プロジェクト「PLATEAU」とデータ変換OSS「PLATEAU GIS Converter」の公開",
+    url: "https://speakerdeck.com/nokonoko1203/ri-ben-quan-guo-du-shi-3dhua-hurosiekuto-plateau-todetabian-huan-oss-plateau-gis-converter-nogong-kai",
+  },
+  youtube: {
+    url: "https://youtu.be/E4FDoadVzF0?si=99VO-NiQCkpzFVy4",
+  },
 };
 
 export const closing: SelectedSessionBase = {

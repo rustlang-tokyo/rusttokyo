@@ -22,6 +22,7 @@ import { FaClock, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
 import { SiQiita } from "react-icons/si";
+import ReactPlayer from "react-player";
 import { TwitterShareButton } from "react-share";
 import { PresentationMaterials } from "./materials";
 
@@ -96,6 +97,14 @@ export function SessionDescription(props: {
       {props.session.presentationSlide && (
         <Box pb={8} fontSize={descFontSize}>
           <PresentationMaterials session={props.session} />
+        </Box>
+      )}
+
+      {props.session.youtube && (
+        <Box pb={8}>
+          <Center>
+            <ReactPlayer url={props.session.youtube?.url} controls pip />
+          </Center>
         </Box>
       )}
 
