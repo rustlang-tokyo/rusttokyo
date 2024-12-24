@@ -18,12 +18,17 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
 import { FaClock, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
 import { SiQiita } from "react-icons/si";
 import { TwitterShareButton } from "react-share";
 import { PresentationMaterials } from "./materials";
+
+const ReactPlayer = dynamic(() => import("react-player/youtube"), {
+  ssr: false,
+});
 
 export function SessionDescription(props: {
   isPc: boolean;
@@ -96,6 +101,14 @@ export function SessionDescription(props: {
       {props.session.presentationSlide && (
         <Box pb={8} fontSize={descFontSize}>
           <PresentationMaterials session={props.session} />
+        </Box>
+      )}
+
+      {props.session.youtube && (
+        <Box pb={8}>
+          <Center>
+            <ReactPlayer url={props.session.youtube?.url} controls pip />
+          </Center>
         </Box>
       )}
 
