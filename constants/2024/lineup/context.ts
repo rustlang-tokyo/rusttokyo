@@ -313,7 +313,7 @@ export const session9B: SelectedSessionBase = {
   sessionType: "Sponsor",
   renderDesc: true,
   youtube: {
-    url: "https://youtu.be/Dy_feHENFUQ?si=aiTt31ZDUKsda1uh",
+    url: "https://youtu.be/LQCxg-iH9vc",
   },
 };
 
